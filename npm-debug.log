@@ -1,0 +1,1529 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'predis' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData predis
+8 silly fetchNamedPackageData predis
+9 silly mapToRegistry name predis
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'predis',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'predis',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/predis
+14 verbose request uri https://registry.npmjs.org/predis
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 7:00:54 AM
+17 verbose request id 3370839c70be2e85
+18 http request GET https://registry.npmjs.org/predis
+19 http 200 https://registry.npmjs.org/predis
+20 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"7VMQA9WLH0MKPQBFA6L914N9V"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '2198',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Thu, 28 Jul 2016 07:01:09 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1469689269.192239,VS0,VE264',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 silly get     etag: '"7VMQA9WLH0MKPQBFA6L914N9V"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '2198',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Thu, 28 Jul 2016 07:01:09 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-sin6921-SIN',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1469689269.192239,VS0,VE264',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving predis to /home/vagrant/.npm/registry.npmjs.org/predis/.cache.json
+23 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+24 verbose makeDirectory /home/vagrant/.npm creation not in flight; initializing
+25 silly makeDirectory /home/vagrant/.npm uid: 900 gid: 900
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule predis@1.0.1 checking installable status
+39 silly cache add args [ 'predis', null ]
+40 verbose cache add spec predis
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'predis',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'predis',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed predis@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for predis
+44 info addNameTag [ 'predis', 'latest' ]
+45 silly mapToRegistry name predis
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'predis',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'predis',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/predis
+50 verbose addNameTag registry:https://registry.npmjs.org/predis not in flight; fetching
+51 verbose get https://registry.npmjs.org/predis not expired, no request
+52 silly addNameTag next cb for predis with tag latest
+53 silly addNamed predis@1.0.1
+54 verbose addNamed "1.0.1" is a plain semver version for predis
+55 silly mapToRegistry name predis
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'predis',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   name: 'predis',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/predis
+60 verbose addRemoteTarball https://registry.npmjs.org/predis/-/predis-1.0.1.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/predis/-/predis-1.0.1.tgz',
+61 verbose addRemoteTarball   '696f01cf980d8b6b53d0b145f2b2723a331bc039' ]
+62 info retry fetch attempt 1 at 7:00:57 AM
+63 info attempt registry request try #1 at 7:00:57 AM
+64 http fetch GET https://registry.npmjs.org/predis/-/predis-1.0.1.tgz
+65 http fetch 200 https://registry.npmjs.org/predis/-/predis-1.0.1.tgz
+66 silly fetchAndShaCheck shasum 696f01cf980d8b6b53d0b145f2b2723a331bc039
+67 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/predis/-/predis-1.0.1.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for predis@1.0.1
+69 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+70 silly cache afterAdd predis@1.0.1
+71 verbose afterAdd /home/vagrant/.npm/predis/1.0.1/package/package.json not in flight; writing
+72 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+73 verbose afterAdd /home/vagrant/.npm/predis/1.0.1/package/package.json written
+74 silly fetchNamedPackageData underscore
+75 silly mapToRegistry name underscore
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: 'underscore',
+78 silly mapToRegistry   scope: null,
+78 silly mapToRegistry   name: 'underscore',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/underscore
+80 silly fetchNamedPackageData nok-promise
+81 silly mapToRegistry name nok-promise
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry https://registry.npmjs.org/
+84 silly mapToRegistry data Result {
+84 silly mapToRegistry   raw: 'nok-promise',
+84 silly mapToRegistry   scope: null,
+84 silly mapToRegistry   name: 'nok-promise',
+84 silly mapToRegistry   rawSpec: '',
+84 silly mapToRegistry   spec: 'latest',
+84 silly mapToRegistry   type: 'tag' }
+85 silly mapToRegistry uri https://registry.npmjs.org/nok-promise
+86 silly fetchNamedPackageData redis
+87 silly mapToRegistry name redis
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry data Result {
+90 silly mapToRegistry   raw: 'redis',
+90 silly mapToRegistry   scope: null,
+90 silly mapToRegistry   name: 'redis',
+90 silly mapToRegistry   rawSpec: '',
+90 silly mapToRegistry   spec: 'latest',
+90 silly mapToRegistry   type: 'tag' }
+91 silly mapToRegistry uri https://registry.npmjs.org/redis
+92 silly fetchNamedPackageData hiredis
+93 silly mapToRegistry name hiredis
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry data Result {
+96 silly mapToRegistry   raw: 'hiredis',
+96 silly mapToRegistry   scope: null,
+96 silly mapToRegistry   name: 'hiredis',
+96 silly mapToRegistry   rawSpec: '',
+96 silly mapToRegistry   spec: 'latest',
+96 silly mapToRegistry   type: 'tag' }
+97 silly mapToRegistry uri https://registry.npmjs.org/hiredis
+98 verbose request uri https://registry.npmjs.org/underscore
+99 verbose request no auth needed
+100 info attempt registry request try #1 at 7:00:57 AM
+101 http request GET https://registry.npmjs.org/underscore
+102 verbose request uri https://registry.npmjs.org/nok-promise
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 7:00:57 AM
+105 http request GET https://registry.npmjs.org/nok-promise
+106 verbose request uri https://registry.npmjs.org/redis
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 7:00:57 AM
+109 http request GET https://registry.npmjs.org/redis
+110 verbose request uri https://registry.npmjs.org/hiredis
+111 verbose request no auth needed
+112 info attempt registry request try #1 at 7:00:57 AM
+113 http request GET https://registry.npmjs.org/hiredis
+114 http 200 https://registry.npmjs.org/underscore
+115 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+115 verbose headers   etag: '"91LR9T25WO9FCR9VE6NIG8CWW"',
+115 verbose headers   'content-type': 'application/json',
+115 verbose headers   'content-encoding': 'gzip',
+115 verbose headers   'cache-control': 'max-age=300',
+115 verbose headers   'content-length': '7838',
+115 verbose headers   'accept-ranges': 'bytes',
+115 verbose headers   date: 'Thu, 28 Jul 2016 07:01:10 GMT',
+115 verbose headers   via: '1.1 varnish',
+115 verbose headers   age: '153',
+115 verbose headers   connection: 'keep-alive',
+115 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+115 verbose headers   'x-cache': 'HIT',
+115 verbose headers   'x-cache-hits': '23',
+115 verbose headers   'x-timer': 'S1469689270.633617,VS0,VE0',
+115 verbose headers   vary: 'Accept-Encoding' }
+116 silly get cb [ 200,
+116 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+116 silly get     etag: '"91LR9T25WO9FCR9VE6NIG8CWW"',
+116 silly get     'content-type': 'application/json',
+116 silly get     'content-encoding': 'gzip',
+116 silly get     'cache-control': 'max-age=300',
+116 silly get     'content-length': '7838',
+116 silly get     'accept-ranges': 'bytes',
+116 silly get     date: 'Thu, 28 Jul 2016 07:01:10 GMT',
+116 silly get     via: '1.1 varnish',
+116 silly get     age: '153',
+116 silly get     connection: 'keep-alive',
+116 silly get     'x-served-by': 'cache-sin6921-SIN',
+116 silly get     'x-cache': 'HIT',
+116 silly get     'x-cache-hits': '23',
+116 silly get     'x-timer': 'S1469689270.633617,VS0,VE0',
+116 silly get     vary: 'Accept-Encoding' } ]
+117 verbose get saving underscore to /home/vagrant/.npm/registry.npmjs.org/underscore/.cache.json
+118 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+119 silly resolveWithNewModule underscore@1.8.3 checking installable status
+120 silly cache add args [ 'underscore@*', null ]
+121 verbose cache add spec underscore@*
+122 silly cache add parsed spec Result {
+122 silly cache add   raw: 'underscore@*',
+122 silly cache add   scope: null,
+122 silly cache add   name: 'underscore',
+122 silly cache add   rawSpec: '*',
+122 silly cache add   spec: '*',
+122 silly cache add   type: 'range' }
+123 silly addNamed underscore@*
+124 verbose addNamed "*" is a valid semver range for underscore
+125 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+126 silly mapToRegistry name underscore
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry data Result {
+129 silly mapToRegistry   raw: 'underscore',
+129 silly mapToRegistry   scope: null,
+129 silly mapToRegistry   name: 'underscore',
+129 silly mapToRegistry   rawSpec: '',
+129 silly mapToRegistry   spec: 'latest',
+129 silly mapToRegistry   type: 'tag' }
+130 silly mapToRegistry uri https://registry.npmjs.org/underscore
+131 verbose addNameRange registry:https://registry.npmjs.org/underscore not in flight; fetching
+132 verbose get https://registry.npmjs.org/underscore not expired, no request
+133 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+134 silly addNameRange versions [ 'underscore',
+134 silly addNameRange   [ '1.0.3',
+134 silly addNameRange     '1.0.4',
+134 silly addNameRange     '1.1.0',
+134 silly addNameRange     '1.1.1',
+134 silly addNameRange     '1.1.2',
+134 silly addNameRange     '1.1.3',
+134 silly addNameRange     '1.1.4',
+134 silly addNameRange     '1.1.5',
+134 silly addNameRange     '1.1.6',
+134 silly addNameRange     '1.1.7',
+134 silly addNameRange     '1.2.0',
+134 silly addNameRange     '1.2.1',
+134 silly addNameRange     '1.2.2',
+134 silly addNameRange     '1.2.3',
+134 silly addNameRange     '1.2.4',
+134 silly addNameRange     '1.3.0',
+134 silly addNameRange     '1.3.1',
+134 silly addNameRange     '1.3.2',
+134 silly addNameRange     '1.3.3',
+134 silly addNameRange     '1.4.0',
+134 silly addNameRange     '1.4.1',
+134 silly addNameRange     '1.4.2',
+134 silly addNameRange     '1.4.3',
+134 silly addNameRange     '1.4.4',
+134 silly addNameRange     '1.5.0',
+134 silly addNameRange     '1.5.1',
+134 silly addNameRange     '1.5.2',
+134 silly addNameRange     '1.6.0',
+134 silly addNameRange     '1.7.0',
+134 silly addNameRange     '1.8.0',
+134 silly addNameRange     '1.8.1',
+134 silly addNameRange     '1.8.2',
+134 silly addNameRange     '1.8.3' ] ]
+135 silly addNamed underscore@1.8.3
+136 verbose addNamed "1.8.3" is a plain semver version for underscore
+137 silly mapToRegistry name underscore
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry data Result {
+140 silly mapToRegistry   raw: 'underscore',
+140 silly mapToRegistry   scope: null,
+140 silly mapToRegistry   name: 'underscore',
+140 silly mapToRegistry   rawSpec: '',
+140 silly mapToRegistry   spec: 'latest',
+140 silly mapToRegistry   type: 'tag' }
+141 silly mapToRegistry uri https://registry.npmjs.org/underscore
+142 verbose addRemoteTarball https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz not in flight; adding
+143 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+143 verbose addRemoteTarball   '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022' ]
+144 info retry fetch attempt 1 at 7:00:58 AM
+145 info attempt registry request try #1 at 7:00:58 AM
+146 http fetch GET https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+147 http fetch 200 https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz
+148 http 200 https://registry.npmjs.org/nok-promise
+149 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+149 verbose headers   etag: '"4H696O2IZJOT84Y6E11OXFM8C"',
+149 verbose headers   'content-type': 'application/json',
+149 verbose headers   'content-encoding': 'gzip',
+149 verbose headers   'cache-control': 'max-age=300',
+149 verbose headers   'content-length': '1843',
+149 verbose headers   'accept-ranges': 'bytes',
+149 verbose headers   date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+149 verbose headers   via: '1.1 varnish',
+149 verbose headers   age: '0',
+149 verbose headers   connection: 'keep-alive',
+149 verbose headers   'x-served-by': 'cache-sin6924-SIN',
+149 verbose headers   'x-cache': 'MISS',
+149 verbose headers   'x-cache-hits': '0',
+149 verbose headers   'x-timer': 'S1469689271.133385,VS0,VE244',
+149 verbose headers   vary: 'Accept-Encoding' }
+150 silly get cb [ 200,
+150 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+150 silly get     etag: '"4H696O2IZJOT84Y6E11OXFM8C"',
+150 silly get     'content-type': 'application/json',
+150 silly get     'content-encoding': 'gzip',
+150 silly get     'cache-control': 'max-age=300',
+150 silly get     'content-length': '1843',
+150 silly get     'accept-ranges': 'bytes',
+150 silly get     date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+150 silly get     via: '1.1 varnish',
+150 silly get     age: '0',
+150 silly get     connection: 'keep-alive',
+150 silly get     'x-served-by': 'cache-sin6924-SIN',
+150 silly get     'x-cache': 'MISS',
+150 silly get     'x-cache-hits': '0',
+150 silly get     'x-timer': 'S1469689271.133385,VS0,VE244',
+150 silly get     vary: 'Accept-Encoding' } ]
+151 verbose get saving nok-promise to /home/vagrant/.npm/registry.npmjs.org/nok-promise/.cache.json
+152 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+153 silly resolveWithNewModule nok-promise@1.0.2 checking installable status
+154 silly cache add args [ 'nok-promise@~1.0.0', null ]
+155 verbose cache add spec nok-promise@~1.0.0
+156 silly cache add parsed spec Result {
+156 silly cache add   raw: 'nok-promise@~1.0.0',
+156 silly cache add   scope: null,
+156 silly cache add   name: 'nok-promise',
+156 silly cache add   rawSpec: '~1.0.0',
+156 silly cache add   spec: '>=1.0.0 <1.1.0',
+156 silly cache add   type: 'range' }
+157 silly addNamed nok-promise@>=1.0.0 <1.1.0
+158 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for nok-promise
+159 silly addNameRange { name: 'nok-promise', range: '>=1.0.0 <1.1.0', hasData: false }
+160 silly mapToRegistry name nok-promise
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry data Result {
+163 silly mapToRegistry   raw: 'nok-promise',
+163 silly mapToRegistry   scope: null,
+163 silly mapToRegistry   name: 'nok-promise',
+163 silly mapToRegistry   rawSpec: '',
+163 silly mapToRegistry   spec: 'latest',
+163 silly mapToRegistry   type: 'tag' }
+164 silly mapToRegistry uri https://registry.npmjs.org/nok-promise
+165 verbose addNameRange registry:https://registry.npmjs.org/nok-promise not in flight; fetching
+166 verbose get https://registry.npmjs.org/nok-promise not expired, no request
+167 silly addNameRange number 2 { name: 'nok-promise', range: '>=1.0.0 <1.1.0', hasData: true }
+168 silly addNameRange versions [ 'nok-promise', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+169 silly addNamed nok-promise@1.0.2
+170 verbose addNamed "1.0.2" is a plain semver version for nok-promise
+171 silly mapToRegistry name nok-promise
+172 silly mapToRegistry using default registry
+173 silly mapToRegistry registry https://registry.npmjs.org/
+174 silly mapToRegistry data Result {
+174 silly mapToRegistry   raw: 'nok-promise',
+174 silly mapToRegistry   scope: null,
+174 silly mapToRegistry   name: 'nok-promise',
+174 silly mapToRegistry   rawSpec: '',
+174 silly mapToRegistry   spec: 'latest',
+174 silly mapToRegistry   type: 'tag' }
+175 silly mapToRegistry uri https://registry.npmjs.org/nok-promise
+176 verbose addRemoteTarball https://registry.npmjs.org/nok-promise/-/nok-promise-1.0.2.tgz not in flight; adding
+177 verbose addRemoteTarball [ 'https://registry.npmjs.org/nok-promise/-/nok-promise-1.0.2.tgz',
+177 verbose addRemoteTarball   '4ba5e512dc3f563549a36936ddf8362ba10f4dff' ]
+178 info retry fetch attempt 1 at 7:00:58 AM
+179 info attempt registry request try #1 at 7:00:58 AM
+180 http fetch GET https://registry.npmjs.org/nok-promise/-/nok-promise-1.0.2.tgz
+181 http 200 https://registry.npmjs.org/redis
+182 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+182 verbose headers   etag: '"KOHUO48I1QCLGUDT9XKAM6DE"',
+182 verbose headers   'content-type': 'application/json',
+182 verbose headers   'content-encoding': 'gzip',
+182 verbose headers   'cache-control': 'max-age=300',
+182 verbose headers   'content-length': '28446',
+182 verbose headers   'accept-ranges': 'bytes',
+182 verbose headers   date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+182 verbose headers   via: '1.1 varnish',
+182 verbose headers   age: '213',
+182 verbose headers   connection: 'keep-alive',
+182 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+182 verbose headers   'x-cache': 'HIT',
+182 verbose headers   'x-cache-hits': '5',
+182 verbose headers   'x-timer': 'S1469689271.128231,VS0,VE0',
+182 verbose headers   vary: 'Accept-Encoding' }
+183 silly get cb [ 200,
+183 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+183 silly get     etag: '"KOHUO48I1QCLGUDT9XKAM6DE"',
+183 silly get     'content-type': 'application/json',
+183 silly get     'content-encoding': 'gzip',
+183 silly get     'cache-control': 'max-age=300',
+183 silly get     'content-length': '28446',
+183 silly get     'accept-ranges': 'bytes',
+183 silly get     date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+183 silly get     via: '1.1 varnish',
+183 silly get     age: '213',
+183 silly get     connection: 'keep-alive',
+183 silly get     'x-served-by': 'cache-sin6926-SIN',
+183 silly get     'x-cache': 'HIT',
+183 silly get     'x-cache-hits': '5',
+183 silly get     'x-timer': 'S1469689271.128231,VS0,VE0',
+183 silly get     vary: 'Accept-Encoding' } ]
+184 verbose get saving redis to /home/vagrant/.npm/registry.npmjs.org/redis/.cache.json
+185 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+186 http 200 https://registry.npmjs.org/hiredis
+187 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+187 verbose headers   etag: '"9YU1XAV9AH1YH7OBHI8CICMO4"',
+187 verbose headers   'content-type': 'application/json',
+187 verbose headers   'content-encoding': 'gzip',
+187 verbose headers   'cache-control': 'max-age=300',
+187 verbose headers   'content-length': '4653',
+187 verbose headers   'accept-ranges': 'bytes',
+187 verbose headers   date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+187 verbose headers   via: '1.1 varnish',
+187 verbose headers   age: '0',
+187 verbose headers   connection: 'keep-alive',
+187 verbose headers   'x-served-by': 'cache-sin6923-SIN',
+187 verbose headers   'x-cache': 'HIT',
+187 verbose headers   'x-cache-hits': '1',
+187 verbose headers   'x-timer': 'S1469689271.177881,VS0,VE259',
+187 verbose headers   vary: 'Accept-Encoding' }
+188 silly get cb [ 200,
+188 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+188 silly get     etag: '"9YU1XAV9AH1YH7OBHI8CICMO4"',
+188 silly get     'content-type': 'application/json',
+188 silly get     'content-encoding': 'gzip',
+188 silly get     'cache-control': 'max-age=300',
+188 silly get     'content-length': '4653',
+188 silly get     'accept-ranges': 'bytes',
+188 silly get     date: 'Thu, 28 Jul 2016 07:01:11 GMT',
+188 silly get     via: '1.1 varnish',
+188 silly get     age: '0',
+188 silly get     connection: 'keep-alive',
+188 silly get     'x-served-by': 'cache-sin6923-SIN',
+188 silly get     'x-cache': 'HIT',
+188 silly get     'x-cache-hits': '1',
+188 silly get     'x-timer': 'S1469689271.177881,VS0,VE259',
+188 silly get     vary: 'Accept-Encoding' } ]
+189 verbose get saving hiredis to /home/vagrant/.npm/registry.npmjs.org/hiredis/.cache.json
+190 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+191 silly resolveWithNewModule redis@0.8.6 checking installable status
+192 silly cache add args [ 'redis@~0.8.3', null ]
+193 verbose cache add spec redis@~0.8.3
+194 silly cache add parsed spec Result {
+194 silly cache add   raw: 'redis@~0.8.3',
+194 silly cache add   scope: null,
+194 silly cache add   name: 'redis',
+194 silly cache add   rawSpec: '~0.8.3',
+194 silly cache add   spec: '>=0.8.3 <0.9.0',
+194 silly cache add   type: 'range' }
+195 silly addNamed redis@>=0.8.3 <0.9.0
+196 verbose addNamed ">=0.8.3 <0.9.0" is a valid semver range for redis
+197 silly addNameRange { name: 'redis', range: '>=0.8.3 <0.9.0', hasData: false }
+198 silly mapToRegistry name redis
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry data Result {
+201 silly mapToRegistry   raw: 'redis',
+201 silly mapToRegistry   scope: null,
+201 silly mapToRegistry   name: 'redis',
+201 silly mapToRegistry   rawSpec: '',
+201 silly mapToRegistry   spec: 'latest',
+201 silly mapToRegistry   type: 'tag' }
+202 silly mapToRegistry uri https://registry.npmjs.org/redis
+203 verbose addNameRange registry:https://registry.npmjs.org/redis not in flight; fetching
+204 silly resolveWithNewModule hiredis@0.1.17 checking installable status
+205 silly cache add args [ 'hiredis@~0.1.15', null ]
+206 verbose cache add spec hiredis@~0.1.15
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'hiredis@~0.1.15',
+207 silly cache add   scope: null,
+207 silly cache add   name: 'hiredis',
+207 silly cache add   rawSpec: '~0.1.15',
+207 silly cache add   spec: '>=0.1.15 <0.2.0',
+207 silly cache add   type: 'range' }
+208 silly addNamed hiredis@>=0.1.15 <0.2.0
+209 verbose addNamed ">=0.1.15 <0.2.0" is a valid semver range for hiredis
+210 silly addNameRange { name: 'hiredis', range: '>=0.1.15 <0.2.0', hasData: false }
+211 silly mapToRegistry name hiredis
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://registry.npmjs.org/
+214 silly mapToRegistry data Result {
+214 silly mapToRegistry   raw: 'hiredis',
+214 silly mapToRegistry   scope: null,
+214 silly mapToRegistry   name: 'hiredis',
+214 silly mapToRegistry   rawSpec: '',
+214 silly mapToRegistry   spec: 'latest',
+214 silly mapToRegistry   type: 'tag' }
+215 silly mapToRegistry uri https://registry.npmjs.org/hiredis
+216 verbose addNameRange registry:https://registry.npmjs.org/hiredis not in flight; fetching
+217 verbose get https://registry.npmjs.org/redis not expired, no request
+218 silly addNameRange number 2 { name: 'redis', range: '>=0.8.3 <0.9.0', hasData: true }
+219 silly addNameRange versions [ 'redis',
+219 silly addNameRange   [ '0.0.1',
+219 silly addNameRange     '0.0.2',
+219 silly addNameRange     '0.0.3',
+219 silly addNameRange     '0.0.4',
+219 silly addNameRange     '0.0.7',
+219 silly addNameRange     '0.0.8',
+219 silly addNameRange     '0.1.0',
+219 silly addNameRange     '0.1.1',
+219 silly addNameRange     '0.1.2',
+219 silly addNameRange     '0.2.0',
+219 silly addNameRange     '0.2.1',
+219 silly addNameRange     '0.2.2',
+219 silly addNameRange     '0.2.3',
+219 silly addNameRange     '0.2.4',
+219 silly addNameRange     '0.2.6',
+219 silly addNameRange     '0.3.0',
+219 silly addNameRange     '0.3.1',
+219 silly addNameRange     '0.3.2',
+219 silly addNameRange     '0.3.3',
+219 silly addNameRange     '0.3.4',
+219 silly addNameRange     '0.3.5',
+219 silly addNameRange     '0.3.6',
+219 silly addNameRange     '0.3.7',
+219 silly addNameRange     '0.3.9',
+219 silly addNameRange     '0.4.0',
+219 silly addNameRange     '0.4.1',
+219 silly addNameRange     '0.4.2',
+219 silly addNameRange     '0.5.0',
+219 silly addNameRange     '0.5.1',
+219 silly addNameRange     '0.5.2',
+219 silly addNameRange     '0.5.3',
+219 silly addNameRange     '0.5.4',
+219 silly addNameRange     '0.5.5',
+219 silly addNameRange     '0.5.6',
+219 silly addNameRange     '0.5.7',
+219 silly addNameRange     '0.5.8',
+219 silly addNameRange     '0.5.9',
+219 silly addNameRange     '0.5.10',
+219 silly addNameRange     '0.5.11',
+219 silly addNameRange     '0.6.0',
+219 silly addNameRange     '0.6.1',
+219 silly addNameRange     '0.6.2',
+219 silly addNameRange     '0.6.3',
+219 silly addNameRange     '0.6.4',
+219 silly addNameRange     '0.6.5',
+219 silly addNameRange     '0.6.6',
+219 silly addNameRange     '0.6.7',
+219 silly addNameRange     '0.7.0',
+219 silly addNameRange     '0.7.1',
+219 silly addNameRange     '0.7.2',
+219 silly addNameRange     '0.7.3',
+219 silly addNameRange     '0.8.0',
+219 silly addNameRange     '0.8.1',
+219 silly addNameRange     '0.8.2',
+219 silly addNameRange     '0.8.3',
+219 silly addNameRange     '0.8.4',
+219 silly addNameRange     '0.8.5',
+219 silly addNameRange     '0.8.6',
+219 silly addNameRange     '0.9.0',
+219 silly addNameRange     '0.9.1',
+219 silly addNameRange     '0.9.2',
+219 silly addNameRange     '0.10.0',
+219 silly addNameRange     '0.10.1',
+219 silly addNameRange     '0.10.2',
+219 silly addNameRange     '0.10.3',
+219 silly addNameRange     '0.11.0',
+219 silly addNameRange     '0.12.0',
+219 silly addNameRange     '0.12.1',
+219 silly addNameRange     '1.0.0',
+219 silly addNameRange     '2.0.0',
+219 silly addNameRange     '2.0.1',
+219 silly addNameRange     '2.1.0',
+219 silly addNameRange     '2.2.0',
+219 silly addNameRange     '2.2.1',
+219 silly addNameRange     '2.2.2',
+219 silly addNameRange     '2.2.3',
+219 silly addNameRange     '2.2.4',
+219 silly addNameRange     '2.2.5',
+219 silly addNameRange     '2.3.0',
+219 silly addNameRange     '2.3.1',
+219 silly addNameRange     '2.4.0',
+219 silly addNameRange     '2.4.1',
+219 silly addNameRange     '2.4.2',
+219 silly addNameRange     '2.5.0-1',
+219 silly addNameRange     '2.5.0',
+219 silly addNameRange     '2.5.1',
+219 silly addNameRange     '2.5.2',
+219 silly addNameRange     '2.5.3',
+219 silly addNameRange     '2.6.0-0',
+219 silly addNameRange     '2.6.0-1',
+219 silly addNameRange     '2.6.0-2',
+219 silly addNameRange     '2.6.0',
+219 silly addNameRange     '2.6.1',
+219 silly addNameRange     '2.6.2' ] ]
+220 silly addNamed redis@0.8.6
+221 verbose addNamed "0.8.6" is a plain semver version for redis
+222 verbose get https://registry.npmjs.org/hiredis not expired, no request
+223 silly addNameRange number 2 { name: 'hiredis', range: '>=0.1.15 <0.2.0', hasData: true }
+224 silly addNameRange versions [ 'hiredis',
+224 silly addNameRange   [ '0.1.0',
+224 silly addNameRange     '0.1.1',
+224 silly addNameRange     '0.1.2',
+224 silly addNameRange     '0.1.3',
+224 silly addNameRange     '0.1.4',
+224 silly addNameRange     '0.1.5',
+224 silly addNameRange     '0.1.6',
+224 silly addNameRange     '0.1.8',
+224 silly addNameRange     '0.1.9',
+224 silly addNameRange     '0.1.10',
+224 silly addNameRange     '0.1.12',
+224 silly addNameRange     '0.1.13',
+224 silly addNameRange     '0.1.14',
+224 silly addNameRange     '0.1.15',
+224 silly addNameRange     '0.1.16',
+224 silly addNameRange     '0.1.17',
+224 silly addNameRange     '0.2.0',
+224 silly addNameRange     '0.3.0',
+224 silly addNameRange     '0.4.0',
+224 silly addNameRange     '0.4.1',
+224 silly addNameRange     '0.5.0' ] ]
+225 silly addNamed hiredis@0.1.17
+226 verbose addNamed "0.1.17" is a plain semver version for hiredis
+227 silly mapToRegistry name redis
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry data Result {
+230 silly mapToRegistry   raw: 'redis',
+230 silly mapToRegistry   scope: null,
+230 silly mapToRegistry   name: 'redis',
+230 silly mapToRegistry   rawSpec: '',
+230 silly mapToRegistry   spec: 'latest',
+230 silly mapToRegistry   type: 'tag' }
+231 silly mapToRegistry uri https://registry.npmjs.org/redis
+232 verbose addRemoteTarball https://registry.npmjs.org/redis/-/redis-0.8.6.tgz not in flight; adding
+233 verbose addRemoteTarball [ 'https://registry.npmjs.org/redis/-/redis-0.8.6.tgz',
+233 verbose addRemoteTarball   'a7ae8f0d6fad24bdeaffe28158d6cd1f1c9d30b8' ]
+234 silly mapToRegistry name hiredis
+235 silly mapToRegistry using default registry
+236 silly mapToRegistry registry https://registry.npmjs.org/
+237 silly mapToRegistry data Result {
+237 silly mapToRegistry   raw: 'hiredis',
+237 silly mapToRegistry   scope: null,
+237 silly mapToRegistry   name: 'hiredis',
+237 silly mapToRegistry   rawSpec: '',
+237 silly mapToRegistry   spec: 'latest',
+237 silly mapToRegistry   type: 'tag' }
+238 silly mapToRegistry uri https://registry.npmjs.org/hiredis
+239 verbose addRemoteTarball https://registry.npmjs.org/hiredis/-/hiredis-0.1.17.tgz not in flight; adding
+240 verbose addRemoteTarball [ 'https://registry.npmjs.org/hiredis/-/hiredis-0.1.17.tgz',
+240 verbose addRemoteTarball   '60a33a968efc9a974e7ebb832f33aa965d3d354e' ]
+241 info retry fetch attempt 1 at 7:00:58 AM
+242 info attempt registry request try #1 at 7:00:58 AM
+243 http fetch GET https://registry.npmjs.org/redis/-/redis-0.8.6.tgz
+244 info retry fetch attempt 1 at 7:00:58 AM
+245 info attempt registry request try #1 at 7:00:58 AM
+246 http fetch GET https://registry.npmjs.org/hiredis/-/hiredis-0.1.17.tgz
+247 silly fetchAndShaCheck shasum 4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022
+248 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/underscore/-/underscore-1.8.3.tgz not in flight; adding
+249 verbose addTmpTarball already have metadata; skipping unpack for underscore@1.8.3
+250 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+251 silly cache afterAdd underscore@1.8.3
+252 verbose afterAdd /home/vagrant/.npm/underscore/1.8.3/package/package.json not in flight; writing
+253 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+254 verbose afterAdd /home/vagrant/.npm/underscore/1.8.3/package/package.json written
+255 http fetch 200 https://registry.npmjs.org/redis/-/redis-0.8.6.tgz
+256 http fetch 200 https://registry.npmjs.org/hiredis/-/hiredis-0.1.17.tgz
+257 http fetch 200 https://registry.npmjs.org/nok-promise/-/nok-promise-1.0.2.tgz
+258 silly fetchAndShaCheck shasum a7ae8f0d6fad24bdeaffe28158d6cd1f1c9d30b8
+259 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/redis/-/redis-0.8.6.tgz not in flight; adding
+260 verbose addTmpTarball already have metadata; skipping unpack for redis@0.8.6
+261 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+262 silly cache afterAdd redis@0.8.6
+263 verbose afterAdd /home/vagrant/.npm/redis/0.8.6/package/package.json not in flight; writing
+264 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+265 verbose afterAdd /home/vagrant/.npm/redis/0.8.6/package/package.json written
+266 silly fetchAndShaCheck shasum 60a33a968efc9a974e7ebb832f33aa965d3d354e
+267 silly fetchAndShaCheck shasum 4ba5e512dc3f563549a36936ddf8362ba10f4dff
+268 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/hiredis/-/hiredis-0.1.17.tgz not in flight; adding
+269 verbose addTmpTarball already have metadata; skipping unpack for hiredis@0.1.17
+270 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+271 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/nok-promise/-/nok-promise-1.0.2.tgz not in flight; adding
+272 verbose addTmpTarball already have metadata; skipping unpack for nok-promise@1.0.2
+273 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+274 silly cache afterAdd hiredis@0.1.17
+275 verbose afterAdd /home/vagrant/.npm/hiredis/0.1.17/package/package.json not in flight; writing
+276 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+277 silly cache afterAdd nok-promise@1.0.2
+278 verbose afterAdd /home/vagrant/.npm/nok-promise/1.0.2/package/package.json not in flight; writing
+279 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+280 verbose afterAdd /home/vagrant/.npm/hiredis/0.1.17/package/package.json written
+281 verbose afterAdd /home/vagrant/.npm/nok-promise/1.0.2/package/package.json written
+282 silly fetchNamedPackageData bindings
+283 silly mapToRegistry name bindings
+284 silly mapToRegistry using default registry
+285 silly mapToRegistry registry https://registry.npmjs.org/
+286 silly mapToRegistry data Result {
+286 silly mapToRegistry   raw: 'bindings',
+286 silly mapToRegistry   scope: null,
+286 silly mapToRegistry   name: 'bindings',
+286 silly mapToRegistry   rawSpec: '',
+286 silly mapToRegistry   spec: 'latest',
+286 silly mapToRegistry   type: 'tag' }
+287 silly mapToRegistry uri https://registry.npmjs.org/bindings
+288 silly fetchNamedPackageData nan
+289 silly mapToRegistry name nan
+290 silly mapToRegistry using default registry
+291 silly mapToRegistry registry https://registry.npmjs.org/
+292 silly mapToRegistry data Result {
+292 silly mapToRegistry   raw: 'nan',
+292 silly mapToRegistry   scope: null,
+292 silly mapToRegistry   name: 'nan',
+292 silly mapToRegistry   rawSpec: '',
+292 silly mapToRegistry   spec: 'latest',
+292 silly mapToRegistry   type: 'tag' }
+293 silly mapToRegistry uri https://registry.npmjs.org/nan
+294 verbose request uri https://registry.npmjs.org/bindings
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 7:00:59 AM
+297 http request GET https://registry.npmjs.org/bindings
+298 verbose request uri https://registry.npmjs.org/nan
+299 verbose request no auth needed
+300 info attempt registry request try #1 at 7:00:59 AM
+301 http request GET https://registry.npmjs.org/nan
+302 http 200 https://registry.npmjs.org/bindings
+303 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+303 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+303 verbose headers   'content-type': 'application/json',
+303 verbose headers   'content-encoding': 'gzip',
+303 verbose headers   'cache-control': 'max-age=300',
+303 verbose headers   'content-length': '3804',
+303 verbose headers   'accept-ranges': 'bytes',
+303 verbose headers   date: 'Thu, 28 Jul 2016 07:01:12 GMT',
+303 verbose headers   via: '1.1 varnish',
+303 verbose headers   age: '23',
+303 verbose headers   connection: 'keep-alive',
+303 verbose headers   'x-served-by': 'cache-sin6921-SIN',
+303 verbose headers   'x-cache': 'HIT',
+303 verbose headers   'x-cache-hits': '2',
+303 verbose headers   'x-timer': 'S1469689272.919953,VS0,VE0',
+303 verbose headers   vary: 'Accept-Encoding' }
+304 silly get cb [ 200,
+304 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+304 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+304 silly get     'content-type': 'application/json',
+304 silly get     'content-encoding': 'gzip',
+304 silly get     'cache-control': 'max-age=300',
+304 silly get     'content-length': '3804',
+304 silly get     'accept-ranges': 'bytes',
+304 silly get     date: 'Thu, 28 Jul 2016 07:01:12 GMT',
+304 silly get     via: '1.1 varnish',
+304 silly get     age: '23',
+304 silly get     connection: 'keep-alive',
+304 silly get     'x-served-by': 'cache-sin6921-SIN',
+304 silly get     'x-cache': 'HIT',
+304 silly get     'x-cache-hits': '2',
+304 silly get     'x-timer': 'S1469689272.919953,VS0,VE0',
+304 silly get     vary: 'Accept-Encoding' } ]
+305 verbose get saving bindings to /home/vagrant/.npm/registry.npmjs.org/bindings/.cache.json
+306 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+307 http 200 https://registry.npmjs.org/nan
+308 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+308 verbose headers   etag: '"EGTR1APXEV7TH8V3QYT0WN357"',
+308 verbose headers   'content-type': 'application/json',
+308 verbose headers   'content-encoding': 'gzip',
+308 verbose headers   'cache-control': 'max-age=300',
+308 verbose headers   'content-length': '17198',
+308 verbose headers   'accept-ranges': 'bytes',
+308 verbose headers   date: 'Thu, 28 Jul 2016 07:01:12 GMT',
+308 verbose headers   via: '1.1 varnish',
+308 verbose headers   age: '64',
+308 verbose headers   connection: 'keep-alive',
+308 verbose headers   'x-served-by': 'cache-sin6926-SIN',
+308 verbose headers   'x-cache': 'HIT',
+308 verbose headers   'x-cache-hits': '7',
+308 verbose headers   'x-timer': 'S1469689272.919326,VS0,VE0',
+308 verbose headers   vary: 'Accept-Encoding' }
+309 silly get cb [ 200,
+309 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+309 silly get     etag: '"EGTR1APXEV7TH8V3QYT0WN357"',
+309 silly get     'content-type': 'application/json',
+309 silly get     'content-encoding': 'gzip',
+309 silly get     'cache-control': 'max-age=300',
+309 silly get     'content-length': '17198',
+309 silly get     'accept-ranges': 'bytes',
+309 silly get     date: 'Thu, 28 Jul 2016 07:01:12 GMT',
+309 silly get     via: '1.1 varnish',
+309 silly get     age: '64',
+309 silly get     connection: 'keep-alive',
+309 silly get     'x-served-by': 'cache-sin6926-SIN',
+309 silly get     'x-cache': 'HIT',
+309 silly get     'x-cache-hits': '7',
+309 silly get     'x-timer': 'S1469689272.919326,VS0,VE0',
+309 silly get     vary: 'Accept-Encoding' } ]
+310 verbose get saving nan to /home/vagrant/.npm/registry.npmjs.org/nan/.cache.json
+311 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+312 silly resolveWithNewModule bindings@1.2.1 checking installable status
+313 silly cache add args [ 'bindings@*', null ]
+314 verbose cache add spec bindings@*
+315 silly cache add parsed spec Result {
+315 silly cache add   raw: 'bindings@*',
+315 silly cache add   scope: null,
+315 silly cache add   name: 'bindings',
+315 silly cache add   rawSpec: '*',
+315 silly cache add   spec: '*',
+315 silly cache add   type: 'range' }
+316 silly addNamed bindings@*
+317 verbose addNamed "*" is a valid semver range for bindings
+318 silly addNameRange { name: 'bindings', range: '*', hasData: false }
+319 silly mapToRegistry name bindings
+320 silly mapToRegistry using default registry
+321 silly mapToRegistry registry https://registry.npmjs.org/
+322 silly mapToRegistry data Result {
+322 silly mapToRegistry   raw: 'bindings',
+322 silly mapToRegistry   scope: null,
+322 silly mapToRegistry   name: 'bindings',
+322 silly mapToRegistry   rawSpec: '',
+322 silly mapToRegistry   spec: 'latest',
+322 silly mapToRegistry   type: 'tag' }
+323 silly mapToRegistry uri https://registry.npmjs.org/bindings
+324 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+325 verbose get https://registry.npmjs.org/bindings not expired, no request
+326 silly addNameRange number 2 { name: 'bindings', range: '*', hasData: true }
+327 silly addNameRange versions [ 'bindings',
+327 silly addNameRange   [ '0.0.1',
+327 silly addNameRange     '0.1.0',
+327 silly addNameRange     '0.1.1',
+327 silly addNameRange     '0.2.0',
+327 silly addNameRange     '0.2.1',
+327 silly addNameRange     '0.2.2',
+327 silly addNameRange     '0.2.3',
+327 silly addNameRange     '0.2.4',
+327 silly addNameRange     '0.3.0',
+327 silly addNameRange     '0.4.0',
+327 silly addNameRange     '1.0.0',
+327 silly addNameRange     '1.1.0',
+327 silly addNameRange     '1.1.1',
+327 silly addNameRange     '1.2.0',
+327 silly addNameRange     '1.2.1' ] ]
+328 silly addNamed bindings@1.2.1
+329 verbose addNamed "1.2.1" is a plain semver version for bindings
+330 silly mapToRegistry name bindings
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry data Result {
+333 silly mapToRegistry   raw: 'bindings',
+333 silly mapToRegistry   scope: null,
+333 silly mapToRegistry   name: 'bindings',
+333 silly mapToRegistry   rawSpec: '',
+333 silly mapToRegistry   spec: 'latest',
+333 silly mapToRegistry   type: 'tag' }
+334 silly mapToRegistry uri https://registry.npmjs.org/bindings
+335 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+336 verbose addRemoteTarball   '14ad6113812d2d37d72e67b4cacb4bb726505f11' ]
+337 info retry fetch attempt 1 at 7:01:00 AM
+338 info attempt registry request try #1 at 7:01:00 AM
+339 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+340 silly resolveWithNewModule nan@1.1.2 checking installable status
+341 silly cache add args [ 'nan@~1.1.0', null ]
+342 verbose cache add spec nan@~1.1.0
+343 silly cache add parsed spec Result {
+343 silly cache add   raw: 'nan@~1.1.0',
+343 silly cache add   scope: null,
+343 silly cache add   name: 'nan',
+343 silly cache add   rawSpec: '~1.1.0',
+343 silly cache add   spec: '>=1.1.0 <1.2.0',
+343 silly cache add   type: 'range' }
+344 silly addNamed nan@>=1.1.0 <1.2.0
+345 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for nan
+346 silly addNameRange { name: 'nan', range: '>=1.1.0 <1.2.0', hasData: false }
+347 silly mapToRegistry name nan
+348 silly mapToRegistry using default registry
+349 silly mapToRegistry registry https://registry.npmjs.org/
+350 silly mapToRegistry data Result {
+350 silly mapToRegistry   raw: 'nan',
+350 silly mapToRegistry   scope: null,
+350 silly mapToRegistry   name: 'nan',
+350 silly mapToRegistry   rawSpec: '',
+350 silly mapToRegistry   spec: 'latest',
+350 silly mapToRegistry   type: 'tag' }
+351 silly mapToRegistry uri https://registry.npmjs.org/nan
+352 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+353 verbose get https://registry.npmjs.org/nan not expired, no request
+354 silly addNameRange number 2 { name: 'nan', range: '>=1.1.0 <1.2.0', hasData: true }
+355 silly addNameRange versions [ 'nan',
+355 silly addNameRange   [ '0.3.0-wip',
+355 silly addNameRange     '0.3.0-wip2',
+355 silly addNameRange     '0.3.0',
+355 silly addNameRange     '0.3.1',
+355 silly addNameRange     '0.3.2',
+355 silly addNameRange     '0.4.0',
+355 silly addNameRange     '0.4.1',
+355 silly addNameRange     '0.4.2',
+355 silly addNameRange     '0.4.3',
+355 silly addNameRange     '0.4.4',
+355 silly addNameRange     '0.5.0',
+355 silly addNameRange     '0.5.1',
+355 silly addNameRange     '0.5.2',
+355 silly addNameRange     '0.6.0',
+355 silly addNameRange     '0.7.0',
+355 silly addNameRange     '0.7.1',
+355 silly addNameRange     '0.8.0',
+355 silly addNameRange     '1.0.0',
+355 silly addNameRange     '1.1.0',
+355 silly addNameRange     '1.1.1',
+355 silly addNameRange     '1.1.2',
+355 silly addNameRange     '1.2.0',
+355 silly addNameRange     '1.3.0',
+355 silly addNameRange     '1.4.0',
+355 silly addNameRange     '1.4.1',
+355 silly addNameRange     '1.5.0',
+355 silly addNameRange     '1.4.2',
+355 silly addNameRange     '1.4.3',
+355 silly addNameRange     '1.5.1',
+355 silly addNameRange     '1.5.2',
+355 silly addNameRange     '1.6.0',
+355 silly addNameRange     '1.5.3',
+355 silly addNameRange     '1.6.1',
+355 silly addNameRange     '1.6.2',
+355 silly addNameRange     '1.7.0',
+355 silly addNameRange     '1.8.0',
+355 silly addNameRange     '1.8.1',
+355 silly addNameRange     '1.8.2',
+355 silly addNameRange     '1.8.3',
+355 silly addNameRange     '1.8.4',
+355 silly addNameRange     '1.9.0',
+355 silly addNameRange     '2.0.0',
+355 silly addNameRange     '2.0.1',
+355 silly addNameRange     '2.0.2',
+355 silly addNameRange     '2.0.3',
+355 silly addNameRange     '2.0.4',
+355 silly addNameRange     '2.0.5',
+355 silly addNameRange     '2.0.6',
+355 silly addNameRange     '2.0.7',
+355 silly addNameRange     '2.0.8',
+355 silly addNameRange     '2.0.9',
+355 silly addNameRange     '2.1.0',
+355 silly addNameRange     '2.2.0',
+355 silly addNameRange     '2.2.1',
+355 silly addNameRange     '2.3.0',
+355 silly addNameRange     '2.3.1',
+355 silly addNameRange     '2.3.2',
+355 silly addNameRange     '2.3.3',
+355 silly addNameRange     '2.3.4',
+355 silly addNameRange     '2.3.5',
+355 silly addNameRange     '2.4.0' ] ]
+356 silly addNamed nan@1.1.2
+357 verbose addNamed "1.1.2" is a plain semver version for nan
+358 silly mapToRegistry name nan
+359 silly mapToRegistry using default registry
+360 silly mapToRegistry registry https://registry.npmjs.org/
+361 silly mapToRegistry data Result {
+361 silly mapToRegistry   raw: 'nan',
+361 silly mapToRegistry   scope: null,
+361 silly mapToRegistry   name: 'nan',
+361 silly mapToRegistry   rawSpec: '',
+361 silly mapToRegistry   spec: 'latest',
+361 silly mapToRegistry   type: 'tag' }
+362 silly mapToRegistry uri https://registry.npmjs.org/nan
+363 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-1.1.2.tgz not in flight; adding
+364 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.1.2.tgz',
+364 verbose addRemoteTarball   'bbd48552fc0758673ebe8fada360b60278a6636b' ]
+365 info retry fetch attempt 1 at 7:01:00 AM
+366 info attempt registry request try #1 at 7:01:00 AM
+367 http fetch GET https://registry.npmjs.org/nan/-/nan-1.1.2.tgz
+368 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz
+369 silly fetchAndShaCheck shasum 14ad6113812d2d37d72e67b4cacb4bb726505f11
+370 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/bindings/-/bindings-1.2.1.tgz not in flight; adding
+371 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.2.1
+372 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+373 http fetch 200 https://registry.npmjs.org/nan/-/nan-1.1.2.tgz
+374 silly cache afterAdd bindings@1.2.1
+375 verbose afterAdd /home/vagrant/.npm/bindings/1.2.1/package/package.json not in flight; writing
+376 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+377 verbose afterAdd /home/vagrant/.npm/bindings/1.2.1/package/package.json written
+378 silly fetchAndShaCheck shasum bbd48552fc0758673ebe8fada360b60278a6636b
+379 verbose addTmpTarball /tmp/npm-4037-bc755dee/registry.npmjs.org/nan/-/nan-1.1.2.tgz not in flight; adding
+380 verbose addTmpTarball already have metadata; skipping unpack for nan@1.1.2
+381 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+382 silly cache afterAdd nan@1.1.2
+383 verbose afterAdd /home/vagrant/.npm/nan/1.1.2/package/package.json not in flight; writing
+384 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+385 verbose afterAdd /home/vagrant/.npm/nan/1.1.2/package/package.json written
+386 silly loadAllDepsIntoIdealTree Finishing
+387 silly idealTree:prePrune iscapsgt09
+387 silly idealTree:prePrune ├── bindings@1.2.1
+387 silly idealTree:prePrune ├── hiredis@0.1.17
+387 silly idealTree:prePrune ├── nan@1.1.2
+387 silly idealTree:prePrune ├── nok-promise@1.0.2
+387 silly idealTree:prePrune ├── predis@1.0.1
+387 silly idealTree:prePrune ├── redis@0.8.6
+387 silly idealTree:prePrune └── underscore@1.8.3
+388 silly loadIdealTree Finishing
+389 silly currentTree iscapsgt09
+390 silly idealTree iscapsgt09
+390 silly idealTree ├── bindings@1.2.1
+390 silly idealTree ├── hiredis@0.1.17
+390 silly idealTree ├── nan@1.1.2
+390 silly idealTree ├── nok-promise@1.0.2
+390 silly idealTree ├── predis@1.0.1
+390 silly idealTree ├── redis@0.8.6
+390 silly idealTree └── underscore@1.8.3
+391 silly generateActionsToTake Starting
+392 silly install generateActionsToTake
+393 silly generateActionsToTake Finishing
+394 silly diffTrees action count 7
+395 silly diffTrees add bindings@1.2.1
+396 silly diffTrees add nan@1.1.2
+397 silly diffTrees add hiredis@0.1.17
+398 silly diffTrees add nok-promise@1.0.2
+399 silly diffTrees add redis@0.8.6
+400 silly diffTrees add underscore@1.8.3
+401 silly diffTrees add predis@1.0.1
+402 silly decomposeActions action count 56
+403 silly decomposeActions fetch bindings@1.2.1
+404 silly decomposeActions extract bindings@1.2.1
+405 silly decomposeActions test bindings@1.2.1
+406 silly decomposeActions preinstall bindings@1.2.1
+407 silly decomposeActions build bindings@1.2.1
+408 silly decomposeActions install bindings@1.2.1
+409 silly decomposeActions postinstall bindings@1.2.1
+410 silly decomposeActions finalize bindings@1.2.1
+411 silly decomposeActions fetch nan@1.1.2
+412 silly decomposeActions extract nan@1.1.2
+413 silly decomposeActions test nan@1.1.2
+414 silly decomposeActions preinstall nan@1.1.2
+415 silly decomposeActions build nan@1.1.2
+416 silly decomposeActions install nan@1.1.2
+417 silly decomposeActions postinstall nan@1.1.2
+418 silly decomposeActions finalize nan@1.1.2
+419 silly decomposeActions fetch hiredis@0.1.17
+420 silly decomposeActions extract hiredis@0.1.17
+421 silly decomposeActions test hiredis@0.1.17
+422 silly decomposeActions preinstall hiredis@0.1.17
+423 silly decomposeActions build hiredis@0.1.17
+424 silly decomposeActions install hiredis@0.1.17
+425 silly decomposeActions postinstall hiredis@0.1.17
+426 silly decomposeActions finalize hiredis@0.1.17
+427 silly decomposeActions fetch nok-promise@1.0.2
+428 silly decomposeActions extract nok-promise@1.0.2
+429 silly decomposeActions test nok-promise@1.0.2
+430 silly decomposeActions preinstall nok-promise@1.0.2
+431 silly decomposeActions build nok-promise@1.0.2
+432 silly decomposeActions install nok-promise@1.0.2
+433 silly decomposeActions postinstall nok-promise@1.0.2
+434 silly decomposeActions finalize nok-promise@1.0.2
+435 silly decomposeActions fetch redis@0.8.6
+436 silly decomposeActions extract redis@0.8.6
+437 silly decomposeActions test redis@0.8.6
+438 silly decomposeActions preinstall redis@0.8.6
+439 silly decomposeActions build redis@0.8.6
+440 silly decomposeActions install redis@0.8.6
+441 silly decomposeActions postinstall redis@0.8.6
+442 silly decomposeActions finalize redis@0.8.6
+443 silly decomposeActions fetch underscore@1.8.3
+444 silly decomposeActions extract underscore@1.8.3
+445 silly decomposeActions test underscore@1.8.3
+446 silly decomposeActions preinstall underscore@1.8.3
+447 silly decomposeActions build underscore@1.8.3
+448 silly decomposeActions install underscore@1.8.3
+449 silly decomposeActions postinstall underscore@1.8.3
+450 silly decomposeActions finalize underscore@1.8.3
+451 silly decomposeActions fetch predis@1.0.1
+452 silly decomposeActions extract predis@1.0.1
+453 silly decomposeActions test predis@1.0.1
+454 silly decomposeActions preinstall predis@1.0.1
+455 silly decomposeActions build predis@1.0.1
+456 silly decomposeActions install predis@1.0.1
+457 silly decomposeActions postinstall predis@1.0.1
+458 silly decomposeActions finalize predis@1.0.1
+459 silly executeActions Starting
+460 silly install executeActions
+461 silly doSerial global-install 0
+462 silly doParallel fetch 7
+463 verbose correctMkdir /home/vagrant/.npm/_locks correctMkdir not in flight; initializing
+464 verbose makeDirectory /home/vagrant/.npm/_locks creation not in flight; initializing
+465 silly makeDirectory /home/vagrant/.npm/_locks uid: 900 gid: 900
+466 verbose lock using /home/vagrant/.npm/_locks/staging-094dcac4febf8ee7.lock for /home/vagrant/Homestead/iscapsgt09/node_modules/.staging
+467 silly doParallel extract 7
+468 silly extract bindings@1.2.1
+469 silly extract nan@1.1.2
+470 silly extract hiredis@0.1.17
+471 silly extract nok-promise@1.0.2
+472 silly extract redis@0.8.6
+473 silly extract underscore@1.8.3
+474 silly extract predis@1.0.1
+475 verbose unbuild node_modules/.staging/bindings-b62b2cba
+476 verbose unbuild node_modules/.staging/nan-1bc0bc17
+477 verbose unbuild node_modules/.staging/hiredis-31570a2a
+478 verbose unbuild node_modules/.staging/nok-promise-19521fbc
+479 verbose unbuild node_modules/.staging/redis-ce9084de
+480 verbose unbuild node_modules/.staging/underscore-d8037bdf
+481 verbose unbuild node_modules/.staging/predis-3b77c04c
+482 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba is being purged from base /home/vagrant/Homestead/iscapsgt09
+483 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba
+484 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17 is being purged from base /home/vagrant/Homestead/iscapsgt09
+485 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17
+486 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a is being purged from base /home/vagrant/Homestead/iscapsgt09
+487 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a
+488 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc is being purged from base /home/vagrant/Homestead/iscapsgt09
+489 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc
+490 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de is being purged from base /home/vagrant/Homestead/iscapsgt09
+491 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de
+492 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf is being purged from base /home/vagrant/Homestead/iscapsgt09
+493 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf
+494 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c is being purged from base /home/vagrant/Homestead/iscapsgt09
+495 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c
+496 verbose tar unpack /home/vagrant/.npm/bindings/1.2.1/package.tgz
+497 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba
+498 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba is being purged
+499 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba
+500 verbose tar unpack /home/vagrant/.npm/nan/1.1.2/package.tgz
+501 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17
+502 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17 is being purged
+503 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17
+504 verbose tar unpack /home/vagrant/.npm/nok-promise/1.0.2/package.tgz
+505 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc
+506 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc is being purged
+507 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc
+508 verbose tar unpack /home/vagrant/.npm/redis/0.8.6/package.tgz
+509 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de
+510 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de is being purged
+511 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de
+512 verbose tar unpack /home/vagrant/.npm/hiredis/0.1.17/package.tgz
+513 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a
+514 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a is being purged
+515 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a
+516 verbose tar unpack /home/vagrant/.npm/underscore/1.8.3/package.tgz
+517 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf
+518 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf is being purged
+519 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf
+520 verbose tar unpack /home/vagrant/.npm/predis/1.0.1/package.tgz
+521 verbose tar unpacking to /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c
+522 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c is being purged
+523 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c
+524 silly gunzTarPerm modes [ '775', '664' ]
+525 silly gunzTarPerm modes [ '775', '664' ]
+526 silly gunzTarPerm modes [ '775', '664' ]
+527 silly gunzTarPerm modes [ '775', '664' ]
+528 silly gunzTarPerm modes [ '775', '664' ]
+529 silly gunzTarPerm modes [ '775', '664' ]
+530 silly gunzTarPerm modes [ '775', '664' ]
+531 silly gunzTarPerm extractEntry package.json
+532 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+533 silly gunzTarPerm extractEntry package.json
+534 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+535 silly gunzTarPerm extractEntry
+536 silly gunzTarPerm modified mode [ '', 493, 509 ]
+537 silly gunzTarPerm extractEntry package.json
+538 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+539 silly gunzTarPerm extractEntry package.json
+540 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+541 silly gunzTarPerm extractEntry package.json
+542 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+543 silly gunzTarPerm extractEntry package.json
+544 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+545 silly gunzTarPerm extractEntry README.md
+546 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+547 silly gunzTarPerm extractEntry bindings.js
+548 silly gunzTarPerm modified mode [ 'bindings.js', 420, 436 ]
+549 silly gunzTarPerm extractEntry README.md
+550 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+551 silly gunzTarPerm extractEntry LICENSE
+552 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+553 silly gunzTarPerm extractEntry include_dirs.js
+554 silly gunzTarPerm modified mode [ 'include_dirs.js', 420, 436 ]
+555 silly gunzTarPerm extractEntry .dntrc
+556 silly gunzTarPerm modified mode [ '.dntrc', 420, 436 ]
+557 silly gunzTarPerm extractEntry build/config.gypi
+558 silly gunzTarPerm modified mode [ 'build/config.gypi', 420, 436 ]
+559 silly gunzTarPerm extractEntry nan.h
+560 silly gunzTarPerm modified mode [ 'nan.h', 420, 436 ]
+561 silly gunzTarPerm extractEntry .npmignore
+562 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+563 silly gunzTarPerm extractEntry README.md
+564 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+565 silly gunzTarPerm extractEntry .npmignore
+566 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+567 silly gunzTarPerm extractEntry README.md
+568 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+569 silly gunzTarPerm extractEntry README.md
+570 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+571 silly gunzTarPerm extractEntry LICENSE
+572 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+573 silly gunzTarPerm extractEntry .npmignore
+574 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+575 silly gunzTarPerm extractEntry README.md
+576 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+577 silly gunzTarPerm extractEntry bench.js
+578 silly gunzTarPerm modified mode [ 'bench.js', 420, 436 ]
+579 silly gunzTarPerm extractEntry binding.gyp
+580 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+581 silly gunzTarPerm extractEntry COPYING
+582 silly gunzTarPerm modified mode [ 'COPYING', 420, 436 ]
+583 silly gunzTarPerm extractEntry test-unref.js
+584 silly gunzTarPerm modified mode [ 'test-unref.js', 420, 436 ]
+585 silly gunzTarPerm extractEntry deps/
+586 silly gunzTarPerm modified mode [ 'deps/', 493, 509 ]
+587 silly gunzTarPerm extractEntry hiredis.js
+588 silly gunzTarPerm modified mode [ 'hiredis.js', 420, 436 ]
+589 silly gunzTarPerm extractEntry underscore.js
+590 silly gunzTarPerm modified mode [ 'underscore.js', 420, 436 ]
+591 silly gunzTarPerm extractEntry underscore-min.js
+592 silly gunzTarPerm modified mode [ 'underscore-min.js', 420, 436 ]
+593 silly gunzTarPerm extractEntry underscore-min.map
+594 silly gunzTarPerm modified mode [ 'underscore-min.map', 420, 436 ]
+595 silly gunzTarPerm extractEntry predis.js
+596 silly gunzTarPerm modified mode [ 'predis.js', 420, 436 ]
+597 silly gunzTarPerm extractEntry Promise.js
+598 silly gunzTarPerm modified mode [ 'Promise.js', 420, 436 ]
+599 silly gunzTarPerm extractEntry test/tests.js
+600 silly gunzTarPerm modified mode [ 'test/tests.js', 420, 436 ]
+601 silly gunzTarPerm extractEntry diff_multi_bench_output.js
+602 silly gunzTarPerm modified mode [ 'diff_multi_bench_output.js', 493, 509 ]
+603 silly gunzTarPerm extractEntry multi_bench.js
+604 silly gunzTarPerm modified mode [ 'multi_bench.js', 420, 436 ]
+605 silly gunzTarPerm extractEntry index.js
+606 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+607 silly gunzTarPerm extractEntry package.json
+608 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+609 silly gunzTarPerm extractEntry README.md
+610 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+611 silly gunzTarPerm extractEntry test/index.html
+612 silly gunzTarPerm modified mode [ 'test/index.html', 420, 436 ]
+613 silly gunzTarPerm extractEntry test.js
+614 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+615 silly gunzTarPerm extractEntry src/
+616 silly gunzTarPerm modified mode [ 'src/', 493, 509 ]
+617 silly gunzTarPerm extractEntry test/
+618 silly gunzTarPerm modified mode [ 'test/', 493, 509 ]
+619 silly gunzTarPerm extractEntry test/lib/sinon.js
+620 silly gunzTarPerm modified mode [ 'test/lib/sinon.js', 420, 436 ]
+621 silly gunzTarPerm extractEntry generate_commands.js
+622 silly gunzTarPerm modified mode [ 'generate_commands.js', 420, 436 ]
+623 silly gunzTarPerm extractEntry lib/commands.js
+624 silly gunzTarPerm modified mode [ 'lib/commands.js', 420, 436 ]
+625 silly gunzTarPerm extractEntry test/reader.js
+626 silly gunzTarPerm modified mode [ 'test/reader.js', 420, 436 ]
+627 silly gunzTarPerm extractEntry src/hiredis.cc
+628 silly gunzTarPerm modified mode [ 'src/hiredis.cc', 420, 436 ]
+629 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba/node_modules is being purged
+630 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba/node_modules
+631 silly gunzTarPerm extractEntry lib/queue.js
+632 silly gunzTarPerm modified mode [ 'lib/queue.js', 420, 436 ]
+633 silly gunzTarPerm extractEntry lib/to_array.js
+634 silly gunzTarPerm modified mode [ 'lib/to_array.js', 420, 436 ]
+635 silly gunzTarPerm extractEntry src/reader.cc
+636 silly gunzTarPerm modified mode [ 'src/reader.cc', 420, 436 ]
+637 silly gunzTarPerm extractEntry src/reader.h
+638 silly gunzTarPerm modified mode [ 'src/reader.h', 420, 436 ]
+639 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c/node_modules is being purged
+640 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c/node_modules
+641 silly gunzTarPerm extractEntry lib/util.js
+642 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 436 ]
+643 silly gunzTarPerm extractEntry lib/parser/hiredis.js
+644 silly gunzTarPerm modified mode [ 'lib/parser/hiredis.js', 420, 436 ]
+645 silly gunzTarPerm extractEntry deps/hiredis/
+646 silly gunzTarPerm modified mode [ 'deps/hiredis/', 493, 509 ]
+647 silly gunzTarPerm extractEntry deps/hiredis.gyp
+648 silly gunzTarPerm modified mode [ 'deps/hiredis.gyp', 420, 436 ]
+649 silly gunzTarPerm extractEntry lib/parser/javascript.js
+650 silly gunzTarPerm modified mode [ 'lib/parser/javascript.js', 420, 436 ]
+651 silly gunzTarPerm extractEntry examples/auth.js
+652 silly gunzTarPerm modified mode [ 'examples/auth.js', 420, 436 ]
+653 silly gunzTarPerm extractEntry examples/mget.js
+654 silly gunzTarPerm modified mode [ 'examples/mget.js', 420, 436 ]
+655 silly gunzTarPerm extractEntry examples/monitor.js
+656 silly gunzTarPerm modified mode [ 'examples/monitor.js', 420, 436 ]
+657 silly gunzTarPerm extractEntry examples/multi.js
+658 silly gunzTarPerm modified mode [ 'examples/multi.js', 420, 436 ]
+659 silly gunzTarPerm extractEntry deps/hiredis/adapters/
+660 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/', 493, 509 ]
+661 silly gunzTarPerm extractEntry deps/hiredis/async.c
+662 silly gunzTarPerm modified mode [ 'deps/hiredis/async.c', 420, 436 ]
+663 silly gunzTarPerm extractEntry examples/file.js
+664 silly gunzTarPerm modified mode [ 'examples/file.js', 420, 436 ]
+665 silly gunzTarPerm extractEntry examples/psubscribe.js
+666 silly gunzTarPerm modified mode [ 'examples/psubscribe.js', 420, 436 ]
+667 silly gunzTarPerm extractEntry examples/pub_sub.js
+668 silly gunzTarPerm modified mode [ 'examples/pub_sub.js', 420, 436 ]
+669 silly gunzTarPerm extractEntry deps/hiredis/async.h
+670 silly gunzTarPerm modified mode [ 'deps/hiredis/async.h', 420, 436 ]
+671 silly gunzTarPerm extractEntry deps/hiredis/CHANGELOG.md
+672 silly gunzTarPerm modified mode [ 'deps/hiredis/CHANGELOG.md', 420, 436 ]
+673 silly gunzTarPerm extractEntry deps/hiredis/COPYING
+674 silly gunzTarPerm modified mode [ 'deps/hiredis/COPYING', 420, 436 ]
+675 silly gunzTarPerm extractEntry examples/simple.js
+676 silly gunzTarPerm modified mode [ 'examples/simple.js', 420, 436 ]
+677 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf/node_modules is being purged
+678 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf/node_modules
+679 silly gunzTarPerm extractEntry examples/sort.js
+680 silly gunzTarPerm modified mode [ 'examples/sort.js', 420, 436 ]
+681 silly gunzTarPerm extractEntry examples/subqueries.js
+682 silly gunzTarPerm modified mode [ 'examples/subqueries.js', 420, 436 ]
+683 silly gunzTarPerm extractEntry examples/extend.js
+684 silly gunzTarPerm modified mode [ 'examples/extend.js', 420, 436 ]
+685 silly gunzTarPerm extractEntry deps/hiredis/dict.c
+686 silly gunzTarPerm modified mode [ 'deps/hiredis/dict.c', 420, 436 ]
+687 silly gunzTarPerm extractEntry deps/hiredis/dict.h
+688 silly gunzTarPerm modified mode [ 'deps/hiredis/dict.h', 420, 436 ]
+689 silly gunzTarPerm extractEntry deps/hiredis/example-ae.c
+690 silly gunzTarPerm modified mode [ 'deps/hiredis/example-ae.c', 420, 436 ]
+691 silly gunzTarPerm extractEntry examples/subquery.js
+692 silly gunzTarPerm modified mode [ 'examples/subquery.js', 420, 436 ]
+693 silly gunzTarPerm extractEntry examples/eval.js
+694 silly gunzTarPerm modified mode [ 'examples/eval.js', 420, 436 ]
+695 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17/node_modules is being purged
+696 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17/node_modules
+697 silly gunzTarPerm extractEntry deps/hiredis/example-libev.c
+698 silly gunzTarPerm modified mode [ 'deps/hiredis/example-libev.c', 420, 436 ]
+699 silly gunzTarPerm extractEntry deps/hiredis/example-libevent.c
+700 silly gunzTarPerm modified mode [ 'deps/hiredis/example-libevent.c', 420, 436 ]
+701 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc/node_modules is being purged
+702 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc/node_modules
+703 silly gunzTarPerm extractEntry examples/unix_socket.js
+704 silly gunzTarPerm modified mode [ 'examples/unix_socket.js', 420, 436 ]
+705 silly gunzTarPerm extractEntry examples/backpressure_drain.js
+706 silly gunzTarPerm modified mode [ 'examples/backpressure_drain.js', 420, 436 ]
+707 silly gunzTarPerm extractEntry deps/hiredis/example.c
+708 silly gunzTarPerm modified mode [ 'deps/hiredis/example.c', 420, 436 ]
+709 silly gunzTarPerm extractEntry deps/hiredis/fmacros.h
+710 silly gunzTarPerm modified mode [ 'deps/hiredis/fmacros.h', 420, 436 ]
+711 silly gunzTarPerm extractEntry examples/web_server.js
+712 silly gunzTarPerm modified mode [ 'examples/web_server.js', 420, 436 ]
+713 silly gunzTarPerm extractEntry examples/multi2.js
+714 silly gunzTarPerm modified mode [ 'examples/multi2.js', 420, 436 ]
+715 silly gunzTarPerm extractEntry deps/hiredis/hiredis.c
+716 silly gunzTarPerm modified mode [ 'deps/hiredis/hiredis.c', 420, 436 ]
+717 silly gunzTarPerm extractEntry deps/hiredis/hiredis.h
+718 silly gunzTarPerm modified mode [ 'deps/hiredis/hiredis.h', 420, 436 ]
+719 silly gunzTarPerm extractEntry changelog.md
+720 silly gunzTarPerm modified mode [ 'changelog.md', 420, 436 ]
+721 silly gunzTarPerm extractEntry benches/buffer_bench.js
+722 silly gunzTarPerm modified mode [ 'benches/buffer_bench.js', 420, 436 ]
+723 silly gunzTarPerm extractEntry deps/hiredis/Makefile
+724 silly gunzTarPerm modified mode [ 'deps/hiredis/Makefile', 420, 436 ]
+725 silly gunzTarPerm extractEntry deps/hiredis/net.c
+726 silly gunzTarPerm modified mode [ 'deps/hiredis/net.c', 420, 436 ]
+727 silly gunzTarPerm extractEntry benches/hiredis_parser.js
+728 silly gunzTarPerm modified mode [ 'benches/hiredis_parser.js', 420, 436 ]
+729 silly gunzTarPerm extractEntry benches/re_sub_test.js
+730 silly gunzTarPerm modified mode [ 'benches/re_sub_test.js', 420, 436 ]
+731 silly gunzTarPerm extractEntry deps/hiredis/net.h
+732 silly gunzTarPerm modified mode [ 'deps/hiredis/net.h', 420, 436 ]
+733 silly gunzTarPerm extractEntry deps/hiredis/README.md
+734 silly gunzTarPerm modified mode [ 'deps/hiredis/README.md', 420, 436 ]
+735 silly gunzTarPerm extractEntry deps/hiredis/sds.c
+736 silly gunzTarPerm modified mode [ 'deps/hiredis/sds.c', 420, 436 ]
+737 silly gunzTarPerm extractEntry benches/reconnect_test.js
+738 silly gunzTarPerm modified mode [ 'benches/reconnect_test.js', 420, 436 ]
+739 silly gunzTarPerm extractEntry benches/sub_quit_test.js
+740 silly gunzTarPerm modified mode [ 'benches/sub_quit_test.js', 420, 436 ]
+741 silly gunzTarPerm extractEntry deps/hiredis/sds.h
+742 silly gunzTarPerm modified mode [ 'deps/hiredis/sds.h', 420, 436 ]
+743 silly gunzTarPerm extractEntry deps/hiredis/test.c
+744 silly gunzTarPerm modified mode [ 'deps/hiredis/test.c', 420, 436 ]
+745 silly gunzTarPerm extractEntry deps/hiredis/adapters/ae.h
+746 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/ae.h', 420, 436 ]
+747 silly gunzTarPerm extractEntry deps/hiredis/adapters/libev.h
+748 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/libev.h', 420, 436 ]
+749 silly gunzTarPerm extractEntry deps/hiredis/adapters/libevent.h
+750 silly gunzTarPerm modified mode [ 'deps/hiredis/adapters/libevent.h', 420, 436 ]
+751 silly gunzTarPerm extractEntry benches/stress/codec.js
+752 silly gunzTarPerm modified mode [ 'benches/stress/codec.js', 420, 436 ]
+753 silly gunzTarPerm extractEntry benches/stress/pubsub/pub.js
+754 silly gunzTarPerm modified mode [ 'benches/stress/pubsub/pub.js', 420, 436 ]
+755 silly gunzTarPerm extractEntry benches/stress/pubsub/server.js
+756 silly gunzTarPerm modified mode [ 'benches/stress/pubsub/server.js', 420, 436 ]
+757 silly gunzTarPerm extractEntry benches/stress/pubsub/run
+758 silly gunzTarPerm modified mode [ 'benches/stress/pubsub/run', 493, 509 ]
+759 silly gunzTarPerm extractEntry benches/stress/rpushblpop/pub.js
+760 silly gunzTarPerm modified mode [ 'benches/stress/rpushblpop/pub.js', 420, 436 ]
+761 silly gunzTarPerm extractEntry benches/stress/rpushblpop/server.js
+762 silly gunzTarPerm modified mode [ 'benches/stress/rpushblpop/server.js', 420, 436 ]
+763 silly gunzTarPerm extractEntry benches/stress/rpushblpop/run
+764 silly gunzTarPerm modified mode [ 'benches/stress/rpushblpop/run', 493, 509 ]
+765 silly gunzTarPerm extractEntry benches/stress/speed/speed.js
+766 silly gunzTarPerm modified mode [ 'benches/stress/speed/speed.js', 420, 436 ]
+767 silly gunzTarPerm extractEntry benches/stress/speed/00
+768 silly gunzTarPerm modified mode [ 'benches/stress/speed/00', 420, 436 ]
+769 silly gunzTarPerm extractEntry benches/stress/speed/plot
+770 silly gunzTarPerm modified mode [ 'benches/stress/speed/plot', 493, 509 ]
+771 silly gunzTarPerm extractEntry benches/stress/speed/size-rate.png
+772 silly gunzTarPerm modified mode [ 'benches/stress/speed/size-rate.png', 420, 436 ]
+773 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a/node_modules is being purged
+774 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a/node_modules
+775 silly gentlyRm /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de/node_modules is being purged
+776 verbose gentlyRm don't care about contents; nuking /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de/node_modules
+777 silly doParallel preinstall 7
+778 silly preinstall bindings@1.2.1 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba
+779 info lifecycle bindings@1.2.1~preinstall: bindings@1.2.1
+780 silly preinstall nan@1.1.2 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17
+781 info lifecycle nan@1.1.2~preinstall: nan@1.1.2
+782 silly preinstall hiredis@0.1.17 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a
+783 info lifecycle hiredis@0.1.17~preinstall: hiredis@0.1.17
+784 silly preinstall nok-promise@1.0.2 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nok-promise-19521fbc
+785 info lifecycle nok-promise@1.0.2~preinstall: nok-promise@1.0.2
+786 silly preinstall redis@0.8.6 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/redis-ce9084de
+787 info lifecycle redis@0.8.6~preinstall: redis@0.8.6
+788 silly preinstall underscore@1.8.3 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/underscore-d8037bdf
+789 info lifecycle underscore@1.8.3~preinstall: underscore@1.8.3
+790 silly preinstall predis@1.0.1 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/predis-3b77c04c
+791 info lifecycle predis@1.0.1~preinstall: predis@1.0.1
+792 silly lifecycle bindings@1.2.1~preinstall: no script for preinstall, continuing
+793 silly lifecycle nan@1.1.2~preinstall: no script for preinstall, continuing
+794 silly lifecycle hiredis@0.1.17~preinstall: no script for preinstall, continuing
+795 silly lifecycle nok-promise@1.0.2~preinstall: no script for preinstall, continuing
+796 silly lifecycle redis@0.8.6~preinstall: no script for preinstall, continuing
+797 silly lifecycle underscore@1.8.3~preinstall: no script for preinstall, continuing
+798 silly lifecycle predis@1.0.1~preinstall: no script for preinstall, continuing
+799 silly doReverseSerial remove 0
+800 silly doSerial move 0
+801 silly doSerial finalize 7
+802 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/bindings
+803 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/nan
+804 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/hiredis
+805 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/nok-promise
+806 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/redis
+807 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/underscore
+808 silly finalize /home/vagrant/Homestead/iscapsgt09/node_modules/predis
+809 silly doSerial build 7
+810 silly build bindings@1.2.1
+811 info linkStuff bindings@1.2.1
+812 silly linkStuff bindings@1.2.1 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+813 verbose linkBins bindings@1.2.1
+814 verbose linkMans bindings@1.2.1
+815 silly build nan@1.1.2
+816 info linkStuff nan@1.1.2
+817 silly linkStuff nan@1.1.2 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+818 verbose linkBins nan@1.1.2
+819 verbose linkMans nan@1.1.2
+820 silly build hiredis@0.1.17
+821 info linkStuff hiredis@0.1.17
+822 silly linkStuff hiredis@0.1.17 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+823 verbose linkBins hiredis@0.1.17
+824 verbose linkMans hiredis@0.1.17
+825 silly build nok-promise@1.0.2
+826 info linkStuff nok-promise@1.0.2
+827 silly linkStuff nok-promise@1.0.2 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+828 verbose linkBins nok-promise@1.0.2
+829 verbose linkMans nok-promise@1.0.2
+830 silly build redis@0.8.6
+831 info linkStuff redis@0.8.6
+832 silly linkStuff redis@0.8.6 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+833 verbose linkBins redis@0.8.6
+834 verbose linkMans redis@0.8.6
+835 silly build underscore@1.8.3
+836 info linkStuff underscore@1.8.3
+837 silly linkStuff underscore@1.8.3 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+838 verbose linkBins underscore@1.8.3
+839 verbose linkMans underscore@1.8.3
+840 silly build predis@1.0.1
+841 info linkStuff predis@1.0.1
+842 silly linkStuff predis@1.0.1 has /home/vagrant/Homestead/iscapsgt09/node_modules as its parent node_modules
+843 verbose linkBins predis@1.0.1
+844 verbose linkMans predis@1.0.1
+845 silly doSerial global-link 0
+846 silly doParallel update-linked 0
+847 silly doSerial install 7
+848 silly install bindings@1.2.1 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/bindings-b62b2cba
+849 info lifecycle bindings@1.2.1~install: bindings@1.2.1
+850 silly lifecycle bindings@1.2.1~install: no script for install, continuing
+851 silly install nan@1.1.2 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/nan-1bc0bc17
+852 info lifecycle nan@1.1.2~install: nan@1.1.2
+853 silly lifecycle nan@1.1.2~install: no script for install, continuing
+854 silly install hiredis@0.1.17 /home/vagrant/Homestead/iscapsgt09/node_modules/.staging/hiredis-31570a2a
+855 info lifecycle hiredis@0.1.17~install: hiredis@0.1.17
+856 verbose lifecycle hiredis@0.1.17~install: unsafe-perm in lifecycle true
+857 verbose lifecycle hiredis@0.1.17~install: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/vagrant/Homestead/iscapsgt09/node_modules/hiredis/node_modules/.bin:/home/vagrant/Homestead/iscapsgt09/node_modules/.bin:/usr/bin:/root/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+858 verbose lifecycle hiredis@0.1.17~install: CWD: /home/vagrant/Homestead/iscapsgt09/node_modules/hiredis
+859 silly lifecycle hiredis@0.1.17~install: Args: [ '-c', 'node-gyp rebuild' ]
+860 silly lifecycle hiredis@0.1.17~install: Returned: code: 1  signal: null
+861 info lifecycle hiredis@0.1.17~install: Failed to exec install script
+862 verbose unlock done using /home/vagrant/.npm/_locks/staging-094dcac4febf8ee7.lock for /home/vagrant/Homestead/iscapsgt09/node_modules/.staging
+863 silly rollbackFailedOptional Starting
+864 silly rollbackFailedOptional Finishing
+865 silly runTopLevelLifecycles Starting
+866 silly runTopLevelLifecycles Finishing
+867 silly install printInstalled
+868 verbose stack Error: hiredis@0.1.17 install: `node-gyp rebuild`
+868 verbose stack Exit status 1
+868 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+868 verbose stack     at emitTwo (events.js:100:13)
+868 verbose stack     at EventEmitter.emit (events.js:185:7)
+868 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+868 verbose stack     at emitTwo (events.js:100:13)
+868 verbose stack     at ChildProcess.emit (events.js:185:7)
+868 verbose stack     at maybeClose (internal/child_process.js:850:16)
+868 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+869 verbose pkgid hiredis@0.1.17
+870 verbose cwd /home/vagrant/Homestead/iscapsgt09
+871 error Linux 3.19.0-25-generic
+872 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "predis"
+873 error node v5.10.1
+874 error npm  v3.8.3
+875 error code ELIFECYCLE
+876 error hiredis@0.1.17 install: `node-gyp rebuild`
+876 error Exit status 1
+877 error Failed at the hiredis@0.1.17 install script 'node-gyp rebuild'.
+877 error Make sure you have the latest version of node.js and npm installed.
+877 error If you do, this is most likely a problem with the hiredis package,
+877 error not with npm itself.
+877 error Tell the author that this fails on your system:
+877 error     node-gyp rebuild
+877 error You can get information on how to open an issue for this project with:
+877 error     npm bugs hiredis
+877 error Or if that isn't available, you can get their info via:
+877 error     npm owner ls hiredis
+877 error There is likely additional logging output above.
+878 verbose exit [ 1, true ]

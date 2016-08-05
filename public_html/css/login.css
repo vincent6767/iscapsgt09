@@ -1,0 +1,22 @@
+body {
+	background-color: #00e6b8;
+
+}
+.panel {
+	margin-top: 20px;
+	width: 70%;
+}
+.no-curve {
+	border-radius: 0 !important;
+}
+.panel-shadow {
+	box-shadow: 10px 10px 10px black;
+}
+
+.login-btn {
+	background-color: #ff0000;
+	color: white;
+}
+.login-btn:hover {
+	background-color: #ff4d4d;
+}
