@@ -28,4 +28,10 @@ class Cycling extends Model
     	}
     	return 0;
     }
+    public function stop() {
+        $this->rpm = 0;
+        $this->counter = 0;
+
+        $this->save();
+    }
 }

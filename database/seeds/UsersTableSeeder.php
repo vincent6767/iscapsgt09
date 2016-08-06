@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder
                 'email' => 'robett.tan@gmail.com',
                 'password' => bcrypt('iscapsgt09'),
                 'birth_date' => '1994-08-01',
-                'gender' => 'M',
+                'gender' => 'm',
                 'weight' => 65
         ]);
     }

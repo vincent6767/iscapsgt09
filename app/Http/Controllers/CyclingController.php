@@ -25,6 +25,8 @@ class CyclingController extends Controller
     public function showUserInformationPage() {
         $user = Auth::user();
 
+        $user->age = $user->getAge();
+
         $session = $this->startSession();
 
     	return view('cycling.UserInformation')->withUser($user)->withSession($session);
@@ -32,8 +34,23 @@ class CyclingController extends Controller
     public function startSession() {
         return CyclingSession::start(Auth::user());
     }
-    public function stopSession() {
-    	
+    public function stopSession(Request $request) {
+        $session = CyclingSession::find($request->id);
+
+        $session->calories = $request->calories;
+
+        $session->stop();
+
+        Cycling::all()->first()->stop();
+    }
+    function getUpdates() {
+        $updates['rpm'] = Cycling::all()->first()->rpm;
+
+        $updates['points'] = Auth::user()->points;
+
+        $updates['timestamps'] = (new \DateTime())->format('Y-m-d H:i:s');
+
+        return json_encode($updates);
     }
     public function pedalling(Request $request) {
     	$validator = Validator::make($request->all(), [

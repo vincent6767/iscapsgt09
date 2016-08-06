@@ -8,6 +8,8 @@ use DateTime;
 
 class User extends Authenticatable
 {
+    const MALE = 'm';
+    const FEMALE = 'f';
     /**
      * The attributes that are mass assignable.
      *
@@ -32,5 +34,8 @@ class User extends Authenticatable
         $today = new DateTime('now');
 
         return $today->diff($birthDate)->y;
+    }
+    public function is($gender) {
+        return ($this->gender == strtolower($gender));
     }
 }

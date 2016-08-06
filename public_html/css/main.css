@@ -6,3 +6,10 @@
 	color: white;
 	font-family: courier arial;
 }
+
+.speedometer-container {
+	min-width: 310px;
+	max-width: 400px;
+	height: 300px;
+	margin: 0 auto;
+}

@@ -13,12 +13,16 @@
 
 Route::group(['middleware' => 'auth'], function() {
 	Route::get('/', 'CyclingController@showUserInformationPage');
+	Route::get('/get-updates', 'CyclingController@getUpdates');
 
 	Route::group(['prefix' => 'tests'], function() {
 		Route::get('sending-data', 'TestingCyclingController@testShowTestingSendingDataPage');
 		Route::get('get-updates', 'TestingCyclingController@testGetUpdates');
+		Route::get('send-data', 'TestingCyclingController@testShowTestSendData');
 	});
 });
+Route::post('/session-stop', 'CyclingController@stopSession');
+
 Route::post('/tests/sending-data', 'TestingCyclingController@testPedalling');
 
 Route::post('/cycling', 'CyclingController@pedalling');

@@ -35,4 +35,7 @@ class TestingCyclingController extends Controller
     public function testGetUpdates() {
     	return TestingCycling::all()->first()->toJson();
     }
+    function testShowTestSendData() {
+        return view('tests.testsenddata');
+    }
 }

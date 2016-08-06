@@ -16,4 +16,9 @@ class CyclingSession extends Model
 
     	return Self::create($newSession);
     }
+    function stop() {
+    	$this->finish_time = (new \DateTime())->format('Y-m-d H:i:s');
+
+    	$this->save();
+    }
 }
