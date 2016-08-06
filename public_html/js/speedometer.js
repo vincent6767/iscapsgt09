@@ -1,7 +1,7 @@
  $('#speedometer').highcharts({
     chart: {
         type: 'gauge',
-        plotBackgroundColor: null,
+        plotBackgroundColor: '#00b3b3',
         plotBackgroundImage: null,
         plotBorderWidth: 0,
         plotShadow: false
@@ -37,7 +37,7 @@
         }, {
             // default background
         }, {
-            backgroundColor: '#DDD',
+            backgroundColor: '#00b3b3',
             borderWidth: 0,
             outerRadius: '105%',
             innerRadius: '103%'

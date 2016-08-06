@@ -1,3 +1,6 @@
+body {
+	background-color: black;
+}
 .bigger {
 	font-size: 1.4em;
 }
@@ -7,9 +10,28 @@
 	font-family: courier arial;
 }
 
+.black-header {
+	color: white;
+	background-color: black;
+	margin: 0;
+}
+
+.speedometer {
+	position: relative;
+}
 .speedometer-container {
-	min-width: 310px;
+	min-width: 250px;
 	max-width: 400px;
 	height: 300px;
-	margin: 0 auto;
+	margin: 10px auto;
+	background-color: #00b3b3;
+}
+.speedometer-tag {
+	position: absolute;
+	left: 320px;
+}
+
+.content {
+	background-color: #00b3b3;
+	padding: 10px;
 }

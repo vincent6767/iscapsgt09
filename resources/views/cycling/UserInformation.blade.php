@@ -1,62 +1,75 @@
 @extends('layouts.master')
 
-@section('errors')
+@section('css')
 
 @endsection
 
+@section('header')
+	<div class="bigger text-center">
+		<h1>ISCAPS</h1>
+		<h3>INTEGRATED AND SMART CLEAN AIR PURIFYING SYSTEM</h3>
+	</div> 
+@endsection
+
 @section('content')
-	{!! Form::model($user, ['url' => url(''), 'method' => 'POST', 'class' => 'form-horizontal']) !!}
-		<div class="form-group">
-			{!! Form::label('gender', 'Gender: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="radio col-sm-4">
-				<label class="control-label radio-inline"><input type="radio" name="gender" value="m" {{ $user->is('m') ? 'checked' : '' }}>Male</label>
-				<label class="control-label radio-inline"><input type="radio" name="gender" value="f" {{ $user->is('f') ? 'checked' : '' }}>Female</label>
+	<div class="content"> 
+		<div class="">
+			<div class="white-title text-center">
+				<h1>HI THERE! WELCOME TO</h1>
 			</div>
 		</div>
-		<div class="form-group">
-			{!! Form::label('age', 'Age: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="col-sm-8"> 
-				{!! Form::number('age', Request::old('age'), ['class' => 'form-control', 'id' => 'age']) !!}
-				<span class="help-block" id="age-error">
+		{!! Form::model($user, ['url' => url(''), 'method' => 'POST', 'class' => 'form-horizontal']) !!}
+			<div class="form-group">
+				{!! Form::label('gender', 'Gender: ', ['class' => 'control-label col-sm-4']) !!}
+				<div class="radio col-sm-4">
+					<label class="control-label radio-inline"><input type="radio" name="gender" value="m" {{ $user->is('m') ? 'checked' : '' }}>Male</label>
+					<label class="control-label radio-inline"><input type="radio" name="gender" value="f" {{ $user->is('f') ? 'checked' : '' }}>Female</label>
+				</div>
+			</div>
+			<div class="form-group">
+				{!! Form::label('age', 'Age: ', ['class' => 'control-label col-sm-4']) !!}
+				<div class="col-sm-4"> 
+					{!! Form::number('age', Request::old('age'), ['class' => 'form-control', 'id' => 'age']) !!}
+					<span class="help-block" id="age-error">
 
-				</span>
+					</span>
+				</div>
+				
 			</div>
-			
-		</div>
-		<div class="form-group">
-			{!! Form::label('weight', 'Weight: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="col-sm-4"> 
-				{!! Form::number('weight', Request::old('weight'), ['class' => 'form-control', 'id' => 'weight']) !!}
-				<span class="help-block" id="weight-error">
+			<div class="form-group">
+				{!! Form::label('weight', 'Weight: ', ['class' => 'control-label col-sm-4']) !!}
+				<div class="col-sm-4"> 
+					{!! Form::number('weight', Request::old('weight'), ['class' => 'form-control', 'id' => 'weight']) !!}
+					<span class="help-block" id="weight-error">
 
-				</span>
+					</span>
+				</div>
+				
 			</div>
-			
-		</div>
-		<div class="form-group">
-			{!! Form::label('rpm', 'RPM: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="col-sm-4"> 
-				{!! Form::number('rpm', 0, ['class' => 'form-control', 'readonly' => true]) !!}
+			<!-- Speedometer Container -->
+			<div class="speedometer">
+				<div class="speedometer-tag">
+					<h2>HOW FAST</h2>
+					<h4>YOU CAN GO?</h4>
+				</div>
+				<div class="container speedometer-container" id="speedometer">
+				</div>
 			</div>
-		</div>
 
-		<!-- Speedometer Container -->
-		<div class="container speedometer-container" id="speedometer">
-		</div>
-
-		<div class="form-group">
-			{!! Form::label('calories', 'Calories: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="col-sm-4"> 
-				{!! Form::number('calories', 0, ['class' => 'form-control', 'readonly' => true]) !!}
+			<div class="form-group">
+				{!! Form::label('calories', 'Calories: ', ['class' => 'control-label col-sm-4']) !!}
+				<div class="col-sm-4"> 
+					{!! Form::number('calories', 0, ['class' => 'form-control', 'readonly' => true]) !!}
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			{!! Form::label('points', 'Points earned: ', ['class' => 'control-label col-sm-4']) !!}
-			<div class="col-sm-4"> 
-				{!! Form::number('points', $user->points, ['class' => 'form-control', 'readonly' => true]) !!}
+			<div class="form-group">
+				{!! Form::label('points', 'Points earned: ', ['class' => 'control-label col-sm-4']) !!}
+				<div class="col-sm-4"> 
+					{!! Form::number('points', $user->points, ['class' => 'form-control', 'readonly' => true]) !!}
+				</div>
 			</div>
-		</div>
-	{!! Form::close() !!}
+		{!! Form::close() !!}
+	</div>
 @endsection
 
 @section('js')

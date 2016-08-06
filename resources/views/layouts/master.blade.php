@@ -8,9 +8,8 @@
 		@yield('css')
 	</head>
 	<body>
-		<div class="container">
-			
-			<div class="page-header">
+		<div class="">
+			<div class="black-header">
 				@if (!Auth::guest())
 					<div class="text-right">
 						<a href="{{ url('/logout') }}" class="bigger"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
