@@ -47,13 +47,16 @@
 				
 			</div>
 			<!-- Speedometer Container -->
-			<div class="speedometer">
-				<div class="speedometer-tag">
-					<h2>HOW FAST</h2>
-					<h4>YOU CAN GO?</h4>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="text-right">
+						<h1>HOW FAST</h1>
+						<h4>YOU CAN GO?</h4>
+					</div>
 				</div>
-				<div class="container speedometer-container" id="speedometer">
+				<div class="col-sm-4" id="speedometer">
 				</div>
+
 			</div>
 
 			<div class="form-group">
@@ -75,7 +78,7 @@
 @section('js')
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/highcharts-more.js"></script>
-	<script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+	<!-- <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script> -->
 	<script type="text/javascript" src="{{ asset('/js/speedometer.js') }}"></script>
 
 	<script type="text/javascript">

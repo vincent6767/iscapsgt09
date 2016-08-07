@@ -84,7 +84,7 @@
 
     series: [{
         name: 'Speed',
-        data: [0],
+        data: [90],
         tooltip: {
             valueSuffix: ' RPM'
         }

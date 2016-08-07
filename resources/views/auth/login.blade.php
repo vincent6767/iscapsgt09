@@ -11,8 +11,8 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-3">
-            <div class="panel panel-default no-curve panel-shadow">
+        <div class="center-box">
+            <div class="panel panel-default no-curve panel-shadow center-box">
                 <div class="panel-heading text-center bigger">Login Here</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">

@@ -16,18 +16,16 @@ function TestingCyclingController(view) {
 		setTimeout(function() {
 			var randNumber = Math.random() * 100;
 			var cycling = {
-				'user_id': 1,
+				'user_id': 4,
 				'rpm': randNumber
 			};
+			console.log(JSON.stringify(cycling));
 			$.ajax({
 				url: url,
 				type: 'POST',
 				contentType: 'application/json; charset=utf-8',
 				dataType: 'json',
-				data: JSON.stringify(cycling),
-				success: function(data) {
-					console.log(data);
-				}
+				data: JSON.stringify(cycling)
 			});
 			self.posting(url, delay);
 		}, delay);
@@ -210,7 +208,7 @@ function UserInformationView(speedometer) {
 		});
 	}
 	this.updateSpeedometer = function(rpm) {
-		this.speedometer.series[0].points[0].update(rpm);
+		this.speedometer.series[0].points[0].update(parseInt(rpm));
 	}
 	this.updatePoints = function(points) {
 		this.setInput('points', points);
@@ -241,6 +239,7 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 		this.model[propName] = value;
 	}
 	this.stopSession = function() {
+		console.log('Post sessions data....');
 		var session = JSON.stringify(this.model.getCurrentSession());
 
 			$.ajax({
@@ -251,6 +250,8 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 				dataType: "json",
 				contentType: "application/json; charset=utf-8"
 			});		
+
+		console.log('Finish posting data!');
 	}
 
 	this.polling = function(url, delay) {
@@ -277,6 +278,7 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 					self.view.updateCalories(session.getCalories());
 				});
 			}
+
 			self.polling(url, delay);
 		}, delay);
 	}
