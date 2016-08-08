@@ -37,7 +37,7 @@
 				
 			</div>
 			<div class="form-group">
-				{!! Form::label('weight', 'Weight: ', ['class' => 'control-label col-sm-4']) !!}
+				{!! Form::label('weight', 'Weight (Kg): ', ['class' => 'control-label col-sm-4']) !!}
 				<div class="col-sm-4"> 
 					{!! Form::number('weight', Request::old('weight'), ['class' => 'form-control', 'id' => 'weight']) !!}
 					<span class="help-block" id="weight-error">
@@ -48,13 +48,13 @@
 			</div>
 			<!-- Speedometer Container -->
 			<div class="row">
-				<div class="col-sm-4">
-					<div class="text-right">
+				<div class="col-md-offset-2 col-md-2 col-sm-12">
+					<div class="text-center">
 						<h1>HOW FAST</h1>
 						<h4>YOU CAN GO?</h4>
 					</div>
 				</div>
-				<div class="col-sm-4" id="speedometer">
+				<div class="col-md-4 col-sm-12" id="speedometer">
 				</div>
 
 			</div>

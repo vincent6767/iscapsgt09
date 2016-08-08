@@ -115,22 +115,25 @@ function User(age, weight, points, gender, session) {
 
 		if (!this.age) {
 			result = false;
-			message = {'age': 'Age is field is required'};
+			message = {'age': 'Age field is required'};
 			this.addMessage(message);
 		} 
 		if (!this.weight) {
 			result = false;
-			message = {'weight': 'Weight is field is required'};
+			message = {'weight': 'Weight field is required'};
 			this.addMessage(message);
 		} 
 		if (!this.gender) {
 			result = false;
-			message = {'gender': 'Gender is field is required'};
+			message = {'gender': 'Gender field is required'};
 			this.addMessage(message);
 		}
 		return result;
 	}
 
+	this.clearMessages = function() {
+		return this.errors.length = 0;
+	}
 	this.addMessage = function(message) {
 		this.errors.push(message);
 	}
@@ -214,7 +217,7 @@ function UserInformationView(speedometer) {
 		this.setInput('points', points);
 	}
 	this.updateCalories = function(calories) {
-		this.setInput('calories', calories);
+		this.setInput('calories', calories.toFixed(2));
 	}
 	this.clearErrors = function() {
 		var self = this;
@@ -251,7 +254,7 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 				contentType: "application/json; charset=utf-8"
 			});		
 
-		console.log('Finish posting data!');
+		console.log('Finish posting data! Good bye!');
 	}
 
 	this.polling = function(url, delay) {
@@ -261,6 +264,7 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 
 			if (!self.model.isValid()) {
 				self.view.displayErrors(self.model.getErrors());
+				self.model.clearMessages();
 				console.log('Wait User to fix the value...');
 			} else {
 				$.get(url, function(data) {

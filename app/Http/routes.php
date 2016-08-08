@@ -16,14 +16,14 @@ Route::group(['middleware' => 'auth'], function() {
 	Route::get('/get-updates', 'CyclingController@getUpdates');
 
 	Route::group(['prefix' => 'tests'], function() {
-		Route::get('sending-data', 'TestingCyclingController@testShowTestingSendingDataPage');
+		Route::get('send-data', 'TestingCyclingController@testShowTestingSendingDataPage');
 		Route::get('get-updates', 'TestingCyclingController@testGetUpdates');
-		Route::get('send-data', 'TestingCyclingController@testShowTestSendData');
+		Route::get('send-random-data', 'TestingCyclingController@testShowTestSendData');
 	});
 });
 Route::post('/session-stop', 'CyclingController@stopSession');
 
-Route::post('/tests/sending-data', 'TestingCyclingController@testPedalling');
+Route::post('/tests/send-data', 'TestingCyclingController@testPedalling');
 
 Route::post('/cycling', 'CyclingController@pedalling');
 
