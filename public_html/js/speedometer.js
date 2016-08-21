@@ -1,14 +1,14 @@
  $('#speedometer').highcharts({
     chart: {
         type: 'gauge',
-        plotBackgroundColor: '#00b3b3',
+        plotBackgroundColor: '#4ecdc4',
         plotBackgroundImage: null,
         plotBorderWidth: 0,
         plotShadow: false
     },
 
     title: {
-        text: 'Speedometer'
+        text: ''
     },
 
     pane: {

@@ -1,6 +1,6 @@
 body {
-	background-color: #00e6b8;
-
+	background-image: url('/images/bg-login.jpg');
+	background-repeat: no-repeat;
 }
 .panel {
 	margin-top: 20px;

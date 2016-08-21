@@ -1,14 +1,32 @@
 body {
-	background-color: black;
-	font-family: Helvetica sans-serif;
+	background-image: url('/images/MEONGWARNA.png');
+	background-size: contain;
+	font-family: Helvetica serif;
 }
 .bigger {
 	font-size: 1.4em;
+	font-weight: bold;
 }
 
 .center-box {
 	margin: 0 auto;
 	max-width: 800px;
+}
+
+#iscaps-abbreviation {
+	background-color: #47aba3;
+	color: #c7e6e4;
+	margin: 0 auto;
+	width: 300px;
+}
+
+#motivational-quotes {
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.quotes {
+	word-wrap: break-word;
 }
 
 .white-title {
@@ -22,8 +40,8 @@ body {
 	margin: 0;
 }
 
-.speedometer {
-	position: relative;
+#speedometer {
+	margin-bottom: 10px;
 }
 .speedometer-container {
 	min-width: 250px;
@@ -38,6 +56,5 @@ body {
 }
 
 .content {
-	background-color: #00b3b3;
 	padding: 10px;
 }

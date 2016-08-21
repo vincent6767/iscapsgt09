@@ -46,8 +46,8 @@ function CyclingSession(id, startTime) {
 	this.finishTime = null;
 	this.calories = 0;
 
-	this.updateCalories = function(calories) {
-		this.calories = calories;
+	this.addCalories = function(calories) {
+		this.calories += calories;
 	}
 	this.getCalories = function() {
 		return this.calories;
@@ -92,12 +92,12 @@ function CaloriesCalculator(user) {
 	this.user = user;
 
 	this.calculateCalories = function() {
-		workDuration = this.user.getCurrentSession().getWorkDuration('s');
+		//workDuration = this.user.getCurrentSession().getWorkDuration('s');
 
 		if (this.user.is('m')) {
-			return ((0.2017 * this.user.getAge()) - (0.19921 * this.user.getWeight()) + 0.37854 * (220 - this.user.getAge()) - 55.0969) * (workDuration / (60 * 4.184));
+			return ((0.2017 * this.user.getAge()) - (0.19921 * this.user.getWeight()) + 0.37854 * (220 - this.user.getAge()) - 55.0969) * (1 / (60 * 4.184));
 		} else if (this.user.is('f')) {
-			return ((0.074 * this.user.getAge()) - (0.126567 * this.user.getWeight()) + 0.26832 * (220 - this.user.getAge()) - 20.4022) * (workDuration / (60 * 4.184));
+			return ((0.074 * this.user.getAge()) - (0.126567 * this.user.getWeight()) + 0.26832 * (220 - this.user.getAge()) - 20.4022) * (1 / (60 * 4.184));
 		}
 	}
 }
@@ -272,10 +272,9 @@ function UserInformationController(view, user, cCalculator, onUnloadGoTo = '') {
 
 					session = self.model.getCurrentSession();
 
-					session.finishTime = data.timestamps;
-
-					session.updateCalories(self.cCalculator.calculateCalories());
-					//console.log(self.model.getCurrentSession().calories);
+					if (parseInt(data.rpm) > 0) {
+						session.addCalories(self.cCalculator.calculateCalories());
+					}
 
 					self.view.updateSpeedometer(data.rpm);
 					self.view.updatePoints(data.points);
