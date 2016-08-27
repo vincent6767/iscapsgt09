@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('css')
-
+	<link rel="stylesheet" type="text/css" href="{{ asset('/css/userinformation.css') }}">
 @endsection
 
 @section('header')
@@ -16,7 +16,7 @@
 		<p>PURIFYING SYSTEM</p>
 	</div>
 	<div id="motivational-quotes" class="white-title bigger center quotes">
-		<p>"insertmotivationalquoteshereinsertmotivationalquoteshereinsertmotivationalquoteshereinsertmotivationalquoteshereinsertmotivationalquoteshere"</p>
+		<p>"Pedalling with ISCAPS twice every day will bring about healthier life for you"</p>
 	</div>
 @endsection
 

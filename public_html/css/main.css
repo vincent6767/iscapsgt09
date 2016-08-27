@@ -1,6 +1,7 @@
 body {
 	background-image: url('/images/MEONGWARNA.png');
-	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family: Helvetica serif;
 }
 .bigger {
@@ -42,6 +43,7 @@ body {
 
 #speedometer {
 	margin-bottom: 10px;
+	height: 220px;
 }
 .speedometer-container {
 	min-width: 250px;
